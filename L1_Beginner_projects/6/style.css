@@ -1,0 +1,322 @@
+*{
+    scroll-behavior: smooth ;
+}
+/* NAVIGATION  */
+.navbar::before{
+    content: "";
+    background-color: black;
+    display: flex;
+    position: absolute;
+    height: 53px;
+    width: 99.5vw;
+    margin-top: -15px;
+    margin-left: -8px;
+    z-index: -1;
+    opacity: 0.7;
+    animation: bg;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes bg {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 100vw;
+    }
+    
+}
+
+/* using display grid would create meaningless margins */
+.navbar{
+    /* overflow: scroll; */
+    margin-top: 15px;
+    position: fixed;
+    display: grid;
+    grid-template-columns:repeat(9,max-content) ;
+
+}
+.navbar div{
+    margin: 3px 4px;
+    animation: rise;
+    animation-duration: 2s;
+}
+@keyframes rise {
+    from{
+        margin-top: 30px;
+    }
+    to{
+        margin-top: 4px;
+    }
+}
+
+.navbar div img{
+    margin-top: -33px;
+    margin-left: -10px;
+    height: 97px;
+    width: 68px;
+}
+.navbar div a{
+    padding: 5px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #d2d2d2;
+}
+.navbar div a:hover{
+    background-color: gray;
+    color: aqua;
+    border-bottom: 3px solid green;
+}
+
+
+/* HOME CARD */
+
+
+#home{
+    border-bottom-left-radius: 118px;
+    border-bottom-right-radius: 110px;
+    margin-top: -8px;
+    margin-left: -15px;
+    height: 600px;
+    width: 89.2vw;
+    background:url(images/bg.svg) no-repeat center center/cover;
+    padding-top: 40vh;
+    padding-left: 10vw;
+    box-shadow: 0px 10px 50px black;
+
+}
+
+#home p{
+    font-size: 2rem;
+    color: white;
+}
+#home p strong{
+    color: green;
+    font-size: 3rem;
+}
+#home .begin{
+    font-size: 2rem;
+    margin-top: 80px;   
+}
+
+#home .begin a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    background-color: blue;
+    border-bottom: 4px solid red;
+    /* border:3px solid black ; */
+    border-radius: 30px;
+}
+#home .begin a:hover{
+    border-bottom: 5px solid green;
+    background-color: rgb(136, 136, 255); 
+    color: darkgreen;
+}
+
+
+/* ABOUT US SECTION */
+
+#about::before{
+    content: "";
+
+    background-color: lavender;
+    position: absolute;
+    top: 658px;
+    left: 0px;
+    height: 900px ;
+    width: 98.7vw;
+    z-index: -1;
+
+}
+#about{
+    margin: 100px 5vw;
+    /* border: 2px solid black; */
+    padding: 2rem, 0.5em;
+    /* border-radius: 30px; */
+    /* color: ; */
+    /* background-color: white; */
+}
+#about H1{
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+/* SERVICES SECTION */
+
+
+#services{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );
+    grid-gap: 2em;
+    margin: 250px 7vw;
+}
+#services .container{
+    background-color: rgb(242, 242, 242);
+    border: 3px solid grey;
+    padding: 9px;
+    border-radius: 20px;
+}
+#services .container h1{
+    display: flex;
+}
+#services .container h1 img{
+    height: 77px;
+    width: 68px;
+}
+
+
+/* PORTFOLIO SECTION CARD */
+
+
+#portfolio{
+    font-size: 20px;
+    display: grid;
+    grid-gap: 20px 30px;
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: 100px 300px 300px 300px 300px;
+    text-decoration: underline;
+    justify-content: center;
+}
+#portfolio div{
+    padding: 10px;
+    /* background-color: black; */
+    text-align: center;
+
+}
+#portfolio div img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    cursor:pointer;
+    box-shadow: 10px 10px 10px black;
+    transition: all 0.3s ease-out;
+}
+#portfolio div img:hover{
+    transform: scale(1.05);
+}
+#portfolio div:first-child{
+    grid-column: 1/ span 3;
+}
+
+
+/* TEAM SECTION CARD CSS */
+
+
+#team::before{
+    content: "";
+    position: absolute;
+    top: 3450px;
+    left: 0px;
+    height: 1450px;
+    width: 98.7vw;
+    background-color: #fafafa;
+    z-index: -1;
+    border-radius: 100px;
+    box-shadow: 0px 10px 50px black, 0px -10px 50px black;
+}
+#team{
+    margin-top: -50px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+#team .container{
+    /* background-color: blue; */
+    /* margin: 1rem 3rem; */
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 270px ;
+    
+}
+#team .container div{
+    padding: 20px 10px;
+}
+#team .container img{
+    border-radius: 30px;
+}
+#team .container div ul{
+    list-style-type: circle;
+}
+#team .container img{
+    width: 190px;
+    height: 250px;
+    background-color: black;
+}
+
+
+/* pricing column */
+
+
+#pricing{
+    margin-top: 300px;
+    justify-content: center;
+}
+.plans{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,400px) );
+    grid-gap: 10px;
+}
+.plans .list{
+    margin-top: 20px;
+    padding: 5px 10px;
+    border: 2px solid #f1f1ff;
+    background-color: rgb(238, 238, 238);
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px black;
+    cursor: pointer;
+}
+.plans .list:hover{
+    border: 3px solid skyblue;
+}
+
+
+/* CONTACT US */
+
+#contact::before{
+    content: "";
+    position: absolute;
+    top: 5540px;
+    left: 0px;
+    height: 400px;
+    width: 98.7vw;
+    background-color: black;
+    z-index: -1;
+}
+#contact h1{
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+
+}
+#contact h1 img{
+    height: 30px;
+    width: 30px;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+#contact form input{
+    width: 50%;
+    padding: 5px;
+    margin: 3px;
+    text-align: center;
+}
+#contact form #submit{
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+#contact form #submit:hover{
+    transform: scale(1.02); 
+    background-color: green;
+}

@@ -1,0 +1,22 @@
+html
+    head 
+        title Form 2
+        style
+            include ../static/style.css
+        script(src="/static/script.js")
+    body 
+        div#formContainer
+            div#form
+                h1 Form Title
+                form(action="/", method="post")
+                    div.this
+                        input(type="text", name="name", placeholder="Enter Your Name", oninput="TgoupA()", class='fill')
+                    div.this
+                        input(type="email", name="email", placeholder="Enter your e-mail", oninput="TgoupB()", class='fill')
+                    div.this
+                        input(type="tel", name="number", placeholder="Enter your contact number", oninput ="TgoupC()", class='fill')
+                    div.this
+                        textarea(name="address", cols="30", placeholder="Enter Your address", oninput="TgoupD()", class='fill')
+                    div.this
+                        textarea(name="more", cols="30", placeholder="Enter something about you", oninput ="TgoupE()", class='fill')
+                    input(type="submit", value="Submit" id="submit")

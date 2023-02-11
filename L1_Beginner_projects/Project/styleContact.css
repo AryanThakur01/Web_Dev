@@ -1,0 +1,113 @@
+body{
+    background-color: black;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#formContainer h1{
+    /* position: relative; */
+    color: white;
+    font-size: 44px;
+    margin: 20px;
+    text-shadow: 0px 0px 24px aquamarine;
+    /* z-index: 100; */
+}
+
+#formContainer{
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#formContainer form{
+    display: flex;
+    flex-direction: column;
+    /* background-color: gold; */
+    background-color: rgba(255, 217, 0, 0.322);
+    /* height: 90vh;
+    width: 90vw; */
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(255, 230, 87, 0.527);
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+}
+
+#formContainer form input,textarea{
+    margin: 10px;
+    padding: 2px 5px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-bottom: 2px solid green;
+    color: white;
+    font-size: 18px;
+    margin: 20px 5px;
+}
+textarea{
+    width: 420px;
+}
+
+#formContainer form div input{
+    width: 200px;
+}
+.butcont{
+    align-self: center;
+    /* background-color: gold; */
+    overflow: hidden;
+    padding: 2px;
+}
+#formContainer form input[type="submit"]{
+    width: fit-content;
+    margin: 0px;
+    padding: 3px 20px;
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0.473);
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    background-color: gray;
+    position: relative;
+    z-index: 5;
+    color: black;
+    border-radius: 3px;
+    transition: all 0.5s ;
+}
+::placeholder{
+    color: white;
+    text-shadow: 2px 2px 3px aquamarine;
+}
+#formContainer form input[type="submit"]:hover{
+    background-color: darkgreen;
+    /* border: 2px solid blue; */
+    color: aqua;
+    text-shadow: 0px 0px 3px white;
+    box-shadow: inset 0px 0px 6px aquamarine;
+    padding: 3px 40px;
+}
+
+#formContainer img{
+    position: absolute;
+    z-index: -1;
+    opacity: 0.6;
+    width: 90vw;
+    height: 96vh;
+
+}
+
+@media only screen and (max-width: 500px) {
+    form div:first-child{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #formContainer form div input, textarea{
+        width: 90vw;
+    }
+}

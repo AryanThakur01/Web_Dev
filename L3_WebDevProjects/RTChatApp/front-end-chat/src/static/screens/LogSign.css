@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+  font-size: 1.05rem;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.floatingGlass {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  background-color: rgba(236, 236, 255, 0.212);
+  backdrop-filter: blur(1px);
+  border: 1px solid #ffffff3d;
+  border-radius: 10px;
+  box-shadow: 14px 29px 47px #00000080;
+  animation: dance 10s linear infinite calc(-1s * var(--var));
+}
+@keyframes dance {
+  0%,
+  100% {
+    transform: translateY(-40px);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+}
+.floatingGlass:nth-child(1) {
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  margin-bottom: 250px;
+  margin-left: 289px;
+}
+.floatingGlass:nth-child(2) {
+  height: 90px;
+  width: 80px;
+  margin-bottom: 160px;
+  margin-right: 280px;
+}
+.floatingGlass:nth-child(3) {
+  height: 70px;
+  width: 60px;
+  z-index: 1;
+  margin-right: 289px;
+  margin-top: 250px;
+}
+.floatingGlass:nth-child(4) {
+  margin-top: 160px;
+  margin-left: 289px;
+}
+
+.container {
+  width: 100%;
+  height: max(100vh, 600px);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  backdrop-filter: blur(8px);
+  padding: 10px;
+  padding-top: 0;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 30px 45px rgba(0, 0, 0, 0.514),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.445);
+  border-radius: 15px;
+  overflow-x: hidden;
+  max-width: 280px;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form form input {
+  margin: 5px 10px;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+  text-align: right;
+  padding: 5px;
+  color: white;
+  max-width: 250px;
+}
+
+.form button {
+  border: none;
+  width: fit-content;
+  align-self: center;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.336);
+  border-radius: 9px;
+  margin: 10px;
+  padding-inline: 20px;
+}
+.form button:hover {
+  background-color: rgba(81, 255, 0, 0.068);
+}
+
+.form div:first-child {
+  background-color: rgba(255, 255, 255, 0.37);
+  /* position: absolute; */
+  padding: 10px;
+  width: 700px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <H1>FORMS IN HTML</H1>
+    <form action="backend.php">                         <!-- iss backend me submit hoga hamara form  -->
+        <label for="username">username</label>             <!-- label use karne se agar hum username par v click krenge to box select ho jayega -->
+        <div>
+            <input type="text" name="name" id="username">
+        </div>
+    
+        <div>
+            email: <input type="email" name="email">
+        </div>
+    
+        <label for="htest">i am a human </label>
+        <div>
+            <input type="checkbox" name="human" id="htest">
+        </div>
+    
+        <div>
+            DOB: <input type="date" name="">
+        </div>
+    
+        <div>
+            age: <input type="number" name="age">
+        </div>
+    
+        <div>
+            favourite colour: <input type="color" name="enter">
+        </div>
+    
+        <div>
+            password: <input type="password" name="aryan">
+        </div>
+    
+        <label for="M">male </label>
+        <label for="F">female </label>
+        <label for="T">trans </label>
+        <div>
+            <input type="radio" name="gender" id="M"> <input type="radio" name="gender" id="F">
+            <input type="radio" name="gender" id="T">
+        </div>
+    
+        <div>
+            <input type="reset" value="clear respose">
+        </div>
+    
+        <div>
+            <input type="submit" value="submit now">
+        </div>
+    </form>
+</body>
+</html>

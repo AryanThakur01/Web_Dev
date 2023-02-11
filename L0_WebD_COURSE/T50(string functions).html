@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+</head>
+<body>
+    
+    <script>
+        var str = "this is a string" ;
+        // t h i s ' ' i s ' ' a ' ' s t  r  i  n  g
+        // 0 1 2 3  4  5 6  7  8  9 10 11 12 13 14 15
+        console.log(str);
+
+        // first occurence of a substring
+        var position = str.indexOf('is');
+        console.log(position);
+
+
+        // last occurence of a substring
+        var position = str.lastIndexOf('is');
+        console.log(position);
+
+
+        //substring from a string
+        var substr1 = str.slice(1,6);
+        console.log(substr1 + '|\\\\\\\\|in slice note the character with index 6 is not printed');
+        
+        var substr3 = str.substring(1,6);
+        console.log(substr3 + '|\\\\\\\\\|in substring note the character with index 6 is not printed');
+        
+        var substr2 = str.substr(1,6);
+        console.log(substr2 + '|\\\\\\\\\|in substr note the character with index 6 is printed');
+
+
+        //replacing in a string
+        var replaced = str.replace('string', 'BIG CHANGE')
+        console.log(str);
+        console.log(replaced);
+
+
+        // upper and lower case
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+
+        // concatinating in astring
+        var newstring = str.concat('New String');
+        console.log(newstring)
+
+
+        // trim to remove white spaces from start and end
+        var strWithWhitespaces = "      string        so many white     spaces     "
+        console.log(strWithWhitespaces);
+        console.log(strWithWhitespaces.trim());
+
+
+        // getting a character with its index given
+        var char2 = str.charAt(2);
+        console.log(char2);
+
+
+        // getting unicode of a character in a string
+        var charcode = str.charCodeAt(2);
+        console.log(charcode);
+
+
+        // getting a string character with its index known
+        console.log(str[8]);
+
+        </script>
+</body>
+</html>

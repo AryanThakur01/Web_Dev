@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            /* grid-template-columns: 200px auto 290px; */
+            /* grid-template-columns: 200px 300px auto; */
+            /* grid-template-columns: repeat(4, 300px); */
+            grid-template-columns: 1fr 5fr 3fr;         /* this is the use of ratio which is 1:5:3*/
+
+        }
+        .item{
+            margin: 5px;
+            background-color: black;
+            color: turquoise;
+            border: 2px solid grey;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">this is item-1</div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+        <div class="item">this is item-7</div>
+        <div class="item">this is item-8</div>
+        <div class="item">this is item-9</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-11</div>
+        <div class="item">this is item-12</div>
+        <div class="item">this is item-13</div>
+        <div class="item">this is item-14</div>
+        <div class="item">this is item-15</div>
+        <div class="item">this is item-16</div>
+    </div>
+</body>
+</html>

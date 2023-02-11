@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: 'Titillium Web', sans-serif; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+/* font-family: 'Titillium Web', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap');
+/* font-family: 'Sansita Swashed', cursive; */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* Styling navigation bar */
+#navbar{
+    position: fixed;
+    height: 60px;
+    width: 100vw;
+    z-index: 100;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.820);
+    /* display: flex; */
+    align-items: center;
+    padding: 8px;
+    backdrop-filter: blur(2px);
+}
+#logo{
+    color: white;
+    font-weight: 900;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 30px;
+    margin-top: -7px;
+}
+#navbar ul{
+    display: flex;
+    margin: 5px 39px;
+    list-style: none;
+}
+#navbar ul li a{
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 3px 5px;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Lobster', cursive;
+    transition: all 0.4s ease-in-out;
+    border-radius: 5px;
+}
+#navbar ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.473);
+    color: black;
+    text-shadow: 0px 2px 3px white;
+    box-shadow: 0px 5px 6px white;
+
+}
+#sectionHeader{
+    height: 1000px;
+}
+#SHbg{
+    top: 0;
+    position: sticky;
+    height: 500px;
+    background: url('/static/bg.jpg')no-repeat center center/cover;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#SHbg h1{
+    margin-top: 210px;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px white;
+}
+#SHbg h3{
+    font-size: 35px;
+    text-shadow: 2px 2px 5px white;
+}
+#SHbg a{
+    padding: 3px 10px;
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.178);
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    text-shadow: 0px 3px 5px black;
+    box-shadow: 0px 5px 10px black;
+    transition: all 0.35s ease-in-out;
+}
+#SHbg a:hover{
+    background-color: rgba(81, 255, 0, 0.411);
+    text-shadow: 0px 3px 7px white;
+    color: aqua;
+    box-shadow: 0px 5px 20px rgb(43, 255, 0);
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+
+
+
+/* Styling services cards */
+#containCards{
+    position: relative;
+    z-index: 2;
+    height: 1400px;
+}
+#cardsSurface{
+    height: 500px;
+    background: linear-gradient(darkblue, white);
+    position: sticky;
+    top: 0;
+}
+.cards{
+    position: relative;
+    z-index: 3;
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px;
+    align-items: center;
+}
+.cd{
+    margin: auto;
+    background-color: rgba(192, 192, 192, 0.493);
+    backdrop-filter: blur(5px);
+    width: 300px;
+    height: 200px;
+    padding: 30px 15px;
+    border-radius: 20px;
+    transform: rotateZ(-30deg);
+    margin-top: 70px;
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.459);
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+.cd:hover{
+    transform: translateY(60px);
+}
+.cd h2{
+    color: rgba(128, 128, 128, 0.829);
+    position: absolute;
+    top: -20px;
+    right: 0;
+    font-size: 70px;
+}
+
+
+#aboutContainer{
+    height: 1000px;
+    /* background-color: orange; */
+}
+#about{
+    top: 0;
+    position: sticky;
+    margin-top: 200px;
+    height: 500px;
+    padding: 50px;
+}
+#about h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0px 2px 8px aqua;
+
+}
+#about ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+}
+#about ul li{
+    padding: 5px 10px;
+    
+}
+
+
+
+#prices{
+    margin-top: -400px;
+    background-color: white;
+    height: 600px;
+    z-index: 6;
+    position: relative;
+    padding-top: 30px;
+}
+#prices .Phead{
+    text-align: center;
+    margin: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0px 2px 8px aqua;
+}
+#pricing{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.price{
+    margin: auto;
+    height: 300px;
+    width: 260px;
+    background-color: rgb(126, 126, 126);
+    padding: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    /* transform: rotateX(30deg); */
+    /* transform: rotateX(-90deg); */
+    /* transform: rotateZ(-30deg); */
+    
+    transition: all 0.4s ease-in-out;
+}
+.price h1{
+    transform: rotateZ(-35deg);
+    background-color: green;
+    text-align: center;
+    margin-left: -130px;
+}
+.prc{
+    font-size: 50px;
+    margin-top: 10px;
+}
+.price:hover{
+    box-shadow: 0px 10px 25px black;
+}
+
+
+
+
+#contactUs{
+    background-color: black;
+    /* height: 500px; */
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contactUs form{
+    display: flex;
+    flex-direction: column;
+}
+#contactUs form input, textarea{
+    padding: 5px 10px;
+    width: 50vw;
+    margin: 10px 30px;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    box-shadow: 0px 5px 8px aqua;
+    background-color: rgba(255, 255, 255, 0.575);
+
+}
+#cUs{
+    color: white;
+    font-size: 40px;
+    text-shadow: 0px 3px 7px aqua;
+}
+#contactUs form input[type="submit"]{
+    background-color: rgba(255, 255, 255, 0.445);
+    width: 100px;
+    font-size: 20px;
+    align-self: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+#contactUs form input[type="submit"]:hover{
+    background-color: rgba(0, 128, 0, 0.637);
+    width: 150px;
+    color: aqua;
+    box-shadow: 0px 5px 10px green;
+    text-shadow: 0px 2px 4px white;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+.glass-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px;
+
+  justify-content: space-between;
+  margin: 20px;
+
+  height: 150px;
+  width: 250px;
+  padding: 6px;
+
+  border: 1px solid rgba(255, 255, 255, 0.418);
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.425),
+    inset 2px 2px 8px rgba(255, 255, 255, 0.24);
+  border-radius: 10px;
+  background: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.027),
+    rgba(128, 128, 128, 0.664)
+  );
+  backdrop-filter: blur(25px);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.glass-card:hover {
+  box-shadow: 0px 0px 20px white;
+}
+
+.credits {
+  text-align: right;
+  font-size: 14px;
+  font-family: "Parisienne", cursive;
+  color: rgb(37, 37, 37);
+}
+.name {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: rgb(0, 0, 70);
+  font-family: "Orbitron", sans-serif;
+}
+.userName {
+  color: rgb(37, 37, 37);
+  font-size: 12px;
+  font-family: "Orbitron", sans-serif;
+}

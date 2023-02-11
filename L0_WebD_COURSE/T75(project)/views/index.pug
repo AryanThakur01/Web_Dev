@@ -1,0 +1,102 @@
+doctype html
+html 
+    head 
+        title Aryan
+        style 
+            include ../static/style.css    
+            //- this function tries to search the style.css in the views folder so go back a step ../ and then go in static and then style.css
+        script(src="/static/script.js") 
+            
+    body
+        nav#navbar 
+            div#logo LOGO 
+            div#navmenu
+                ul 
+                    li #[a(href='/') Home]
+                    li #[a(href='#cards') Cards]
+                    li #[a(href='#about') About]
+                    li #[a(href='#prices') Pricing]
+                    li #[a(href="#contactUs") Contact]
+        section#sectionHeader
+            div#SHbg
+                h1 Boost your business with ANU-Dev
+                h3 Raise the customer service
+                a(href="#") Get Started 
+            div#containCards
+                div#cardsSurface
+                div.cards#cards 
+                    div.cd#card1 
+                        h1 Service
+                        div Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, facere!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, minus? 
+                        h2 01
+                    div.cd#card2 
+                        h1 Service
+                        div Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, facere!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, minus? 
+                        h2 02
+                    div.cd#card3 
+                        h1 Service
+                        div Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, facere!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, minus? 
+                        h2 03
+                div.cards
+                    div.cd#card4 
+                        h1 Service
+                        div Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, facere!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, minus? 
+                        h2 04
+                    div.cd#card5 
+                        h1 Service
+                        div Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, facere!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, minus? 
+                        h2 05
+                    div.cd#card6 
+                        h1 Service
+                        div Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, facere!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, minus? 
+                        h2 06
+                div#aboutContainer
+                    div#about
+                        h1.Phead About Us 
+                        h3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem rerum alias laboriosam repellendus omnis debitis voluptates laudantium totam eius nesciunt. Velit ex eaque dignissimos voluptas qui vel repellat sint eligendi illo quasi placeat a, repudiandae suscipit. In perspiciatis architecto quidem.
+                        ul 
+                                li Lorem ipsum dolor sit amet. lorem ipsum
+                                li Lorem ipsum dolor sit amet consectetur adipisicing.
+                                li Lorem ipsum dolor sit amet consectetur. amet consectetur.
+                                li Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus!
+                                li Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, reprehenderit.
+                                li Lorem, ipsum dolor. lore loreal ao
+                                li Lorem ipsum dolor sit amet.
+                                li Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, rerum. Modi,       lium!
+                                li Lorem, ipsum.
+                                li Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere nihil id debiti
+                div#prices
+                    h1.Phead Pricing
+                    div#pricing
+                        div.price
+                            h1 New Business 
+                            div.prc $0
+                            ul 
+                                li Lorem ipsum dolor sit.
+                                li Lorem ipsum dolor sit amet consectetur.
+                                li Lorem ipsum dolor sit amet consectetur adipisicing.
+                        div.price
+                            h1 Personal
+                            div.prc $10
+                            ul 
+                                li Lorem ipsum dolor sit.
+                                li Lorem ipsum dolor sit amet consectetur.
+                                li Lorem ipsum dolor sit amet consectetur adipisicing.
+                        div.price
+                            h1 Business
+                            div.prc $20
+                            ul 
+                                li Lorem ipsum dolor sit.
+                                li Lorem ipsum dolor sit amet consectetur.
+                                li Lorem ipsum dolor sit amet consectetur adipisicing.
+                div#contactUs
+                    h1#cUs ContactUs 
+                    form(action="/" method="post")
+                        input(type="text", name="name", placeholder="Enter Your Name")
+                        input(type="email", name="email", placeholder="Enter Your Email")
+                        input(type="text", name="address", placeholder="Enter your address")
+                        textarea#troubles(name="issues", rows='5', cols='30', placeholder='Enter Your Concern')
+                        //- Remember not to leave eve a space after the textholder tag or else it will get printed inside the container
+                        input(type="submit", value="Submit")
+
+                section#footer Ⓒ AryanDanceAcademy.com | All Rights Reserved

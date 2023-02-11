@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+</head>
+<style>
+    .container{
+        background-color: ivory;
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        background-color: greenyellow;
+        margin: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        
+    }
+
+    /* box-shadow: x-offset y-offset blur-radius spread-radius shadow color; */
+    
+    #card-1{
+        box-shadow: 20px 20px rgb(60, 83, 26);
+    }
+    #card-1_1{
+        box-shadow: -20px -20px rgb(60, 83, 26);
+    }
+    #card-2{
+        box-shadow: 20px 20px 10px rgb(60, 83, 26);
+    }
+    #card-3{
+        box-shadow: 20px 20px 0px 9px rgb(60, 83, 26);
+    }
+    
+    /* text-shadow: x-offset y-offset blur-radius spread-radius; */
+    .card h2{
+        text-shadow: 3px 3px 3px rgb(255, 255, 255);
+    }
+
+    /* multiple shadows */
+    #card-4{
+        box-shadow: 20px 20px 3px rgb(60, 83, 26), -20px -20px 3px red;
+    }
+    
+    /* inset makes shadow inwards */
+    #card-5{
+        box-shadow: inset 20px 20px 20px rgb(60, 83, 26);
+        
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>First shadow</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quo illo. Aspernatur necessitatibus ratione quam illo a nisi harum neque, dolorem qui placeat consectetur quod ipsa, itaque in delectus repellendus odio quaerat deserunt laboriosam.</p>
+        </div>
+        <div class="card" id="card-1_1">
+            <h2>First sub</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla accusantium explicabo consequuntur vel, quam vitae commodi, neque eum numquam est quia asperiores accusamus laboriosam non nam cupiditate magnam a quibusdam, laudantium earum. Quisquam, fugiat.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Second sub</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quos pariatur, atque voluptates a repellat dolor molestiae porro. Repellendus adipisci asperiores suscipit ipsam distinctio veniam sequi magni. Corrupti illum repudiandae exercitationem enim dignissimos culpa!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Third sub</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum in magni cupiditate, accusantium inventore nisi iure ipsa aut, sunt repellendus quaerat quas dolor autem earum facere consequuntur unde, expedita non. Id culpa impedit quidem.</p>
+        </div>
+        <div class="card" id="card-4">
+            <h2>multiple shadows</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum in magni cupiditate, accusantium inventore nisi iure ipsa aut, sunt repellendus quaerat quas dolor autem earum facere consequuntur unde, expedita non. Id culpa impedit quidem.</p>
+        </div>
+        <div class="card" id="card-5">
+            <h2>inward shadows</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum in magni cupiditate, accusantium inventore nisi iure ipsa aut, sunt repellendus quaerat quas dolor autem earum facere consequuntur unde, expedita non. Id culpa impedit quidem.</p>
+        </div>
+    </div>
+</body>
+</html>

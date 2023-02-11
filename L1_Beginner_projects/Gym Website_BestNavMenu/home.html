@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Home Page</title>
+    <link rel="stylesheet" href="styleHome.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <div id="navBar">
+        <div id="logo">LOGO</div>
+        <div id="hamburger" onclick="openNavigationMenu()">
+            <div id="b1" class="hamBar bar1"></div>
+            <div id="b2" class="hamBar bar2"></div>
+            <div id="b3" class="hamBar bar3"></div>
+        </div>
+        <div id="navMenu" class="navVisible navHide">
+            <ul id="navMenuMajorList">
+                <li><a href="#">Classes</a></li>
+                <li><a href="#" onclick="activateTrainers()">Trainers <span>&#9657;</span></a></li>
+                <li><a href="#" onclick="activateShop()">Shop <span>&#9657;</span></a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#" onclick="activatePages()">Pages <span>&#9657;</span></a></li>
+                <li><a href="#">JOIN</a></li>
+            </ul>
+            <ul id="navMenuSubList">
+                <li class="navMenuSubList_lis" id="pages">
+                    <ul>
+                        <li><a href="#homePage" onclick="foldNavigation()">Home</a></li>
+                        <li><a href="#" onclick="foldNavigation()">About</a></li>
+                        <li><a href="#" onclick="foldNavigation()">FAQs</a></li>
+                        <li><a href="#" onclick="foldNavigation()">Contact </a></li>
+                    </ul>
+                </li>
+                <li class="navMenuSubList_lis" id="shops">
+                    <ul>
+                        <li><a href="#" onclick="foldNavigation()">Shop1</a></li>
+                        <li><a href="#" onclick="foldNavigation()">Shop2</a></li>
+                        <li><a href="#" onclick="foldNavigation()">Shop3</a></li>
+                    </ul>
+                </li>
+                <li class="navMenuSubList_lis" id="trainers">
+                    <ul>
+                        <li><a href="#" onclick="foldNavigation()">Trainer1</a></li>
+                        <li><a href="#" onclick="foldNavigation()">Trainer2</a></li>
+                        <li><a href="#" onclick="foldNavigation()">Trainer3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="landingPage">
+        <div id="homePage">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <h2>Lorem, ipsum dolor.</h2>
+            <h3><a href="#">Get Started</a></h3>
+        </div>
+        <div id="servicesBg"></div>
+        <div id="services">
+            <div class="circle c1"></div>
+            <div class="circle c2"></div>
+            <div class="circle c3"></div>
+            <div class="serv s1">
+                <h2>01</h2>
+                <h1>Service</h1>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequatur corrupti vitae praesentium impedit expedita ullam perspiciatis sint unde eius ea error deserunt qu!</div>
+            </div>
+            <div class="serv s2">
+                <h2>02</h2>
+                <h1>Service</h1>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequatur corrupti vitae praesentium impedit expedita ullam perspiciatis sint unde eius ea error deserunt qu!</div>
+            </div>
+            <div class="serv s3">
+                <h2>03</h2>
+                <h1>Service</h1>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequatur corrupti vitae praesentium impedit expedita ullam perspiciatis sint unde eius ea error deserunt qu!</div>
+            </div>
+            <div class="serv s4">
+                <h2>04</h2>
+                <h1>Service</h1>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequatur corrupti vitae praesentium impedit expedita ullam perspiciatis sint unde eius ea error deserunt qu!</div>
+            </div>
+            <div class="serv s5">
+                <h2>05</h2>
+                <h1>Service</h1>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequatur corrupti vitae praesentium impedit expedita ullam perspiciatis sint unde eius ea error deserunt qu!</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

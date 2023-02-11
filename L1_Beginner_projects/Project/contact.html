@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styleHome.css">
+    <link rel="stylesheet" href="styleContact.css">
+</head>
+
+<body>
+    <!-- NAVIGATION MENU -->
+    <nav>
+        <div id="logo">
+            <img src="/images/128px-Jeweled_Sword.svg.png" alt="!">
+        </div>
+        <div id="hamburger" onclick="navMenuList()">
+            <div class="bar" id="b1"></div>
+            <div class="bar" id="b2"></div>
+            <div class="bar" id="b3"></div>
+        </div>
+        <div class="navMenu fold" id="naviMenu">
+            <ul>
+                <li><a href="home.html" onclick="navMenuList()" onmouseover="descrh()">Home</a></li>
+                <li><a href="about.html" onclick="navMenuList()" onmouseover="descra()">About</a></li>
+                <li><a href="#" class="active" onclick="navMenuList()" onmouseover="descrc()">Contact</a></li>
+                <li><a href="#" onclick="navMenuList()" onmouseover="descrt()">Team</a></li>
+                <li><a href="#" onclick="navMenuList()" onmouseover="descrm()">Message</a></li>
+            </ul>
+            <div id="Desc">
+                <h1>Heading</h1>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis architecto consequatur, velit
+                    similique delectus sequi fugit placeat distinctio ea quas fuga sed esse, dolorem deserunt.
+                    Perspiciatis veritatis deleniti asperiores dolorem, natus nam inventore,</div>
+            </div>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+
+
+        <div id="formContainer">
+            <h1>Contact Us</h1>
+            <img src="/images/form.jpg" alt="">
+            <form action="#">
+                <div>
+                    <input type="text" naeme="name" placeholder="Enter Your Name">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Mail address">
+                </div>
+                <textarea name="message" id="message" cols="30" rows="3" placeholder="Enter the message"></textarea>
+                <div class="butcont">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+</body>
+
+</html>

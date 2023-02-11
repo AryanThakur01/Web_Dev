@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Tutorial</title>
+</head>
+<body>
+    <div class="container">
+        This is my container
+    </div>
+    <script>
+        let jsonObj = {
+            name:"Harry",
+            channel: "CWH",
+            friend: "Rohan Das",
+            food: "bhindi"
+        }
+        console.log(jsonObj);
+
+
+        // JSON.stringify()
+        let myJsonStr = JSON.stringify(jsonObj);
+        console.log(myJsonStr);
+
+        myJsonStr = myJsonStr.replace('bhindi','baingan');
+        console.log(myJsonStr);
+
+        // JSON.parse()
+        newJsonObj = JSON.parse(myJsonStr);
+        console.log(newJsonObj);
+
+        // FOR PARSING IT MUST BE A STRING THAT IS AN OBJECT
+
+    </script>
+</body>
+</html>

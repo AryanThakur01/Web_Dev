@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My PortFolio</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+<body>
+    <div class="hamburger" onclick="toggleNaviMenu()">
+        <div class="bar barActive"></div>
+    </div>
+    <nav id="naviMenu" class="navigation">
+        <ul>
+            <li><img src="images/home.png"><a href="#" class="navlink"> HOME</a></li>
+            <li><img src="images/about.png"><a href="#about" class="navlink"> ABOUT ME</a></li>
+            <li><img src="images/contact.png"><a href="#" class="navlink"> CONTACT</a></li>
+            <li><img src="images/help.png"><a href="#" class="navlink"> HELP</a></li>
+        </ul>
+    </nav>
+    <div id="name">ARYAN</div>
+    <div id="Landing">
+        <h1>Front End Developer And Designer</h1>
+        <h3>Hey there! I am Aryan and I love web designing</h3>
+        <img src="images/myAvatar.svg" alt="ImageUnavailable">
+    </div>
+    <div id="about">
+        <div>
+            <h1>About Me <img src="images/about.png"></h1>
+            <p>Hey There! I am a student at Graphic Era University.... I love to design code and program. presently I
+                prefer to work with css for my web projects. It has been about two months since I started working on web
+                projects. I might not have experience of work but I do have some self created projects.</p>
+        </div>
+        <div class="skillListTitle">My Skill Cards</div>
+        <div class="skillCards">
+            <card>
+                <span class="num">01</span>
+                <div>HTML</div>
+                <div>Relative Level: &#9733&#9733&#9733&#9733</div>
+            </card>
+            <card>
+                <span class="num">02</span>
+                <div>CSS</div>
+                <div>Relative Level: &#9733&#9733&#9733&#9733&#9733</div>
+            </card>
+            <card>
+                <span class="num">03</span>
+                <div>Java Script</div>
+                <div>Relative Level: &#9733</div>
+            </card>
+            <card>
+                <span class="num">05</span>
+                <div>C</div>
+                <div>Relative Level: &#9733&#9733&#9733</div>
+            </card>
+            <card>
+                <span class="num">04</span>
+                <div>C++</div>
+                <div>Relative Level: &#9733&#9733&#9733&#9733</div>
+            </card>
+            <card>
+                <span class="num">05</span>
+                <div>Python</div>
+                <div>Relative Level: &#9733&#9733&#9733</div>
+            </card>
+            <card>
+                <span class="num">05</span>
+                <div>ReactJs</div>
+                <div>Relative Level: <span style="color: red;">ALIEN</span></div>
+            </card>
+            <card>
+                <span class="num">05</span>
+                <div>ExpressJs</div>
+                <div>Relative Level: <span style="color: red;">ALIEN</span></div>
+            </card>
+        </div>
+    </div>
+    <div id="contact">
+        <div style="font-size: 30px; margin: 30px;">CONTACT ME</div>
+        <form action="backend.php" id="queries">
+            <input type="text" placeholder="NAME">
+            <input type="text" placeholder="E-MAIL">
+            <input type="text" placeholder="MOBILE NO.">
+            <input type="text" placeholder="REVIEW">
+            <input type="submit", value="SUBMIT">
+        </form>
+        <div class="socialMedia">
+            <img src="images/instagram.png"  style="height: 30px;">
+            <img src="images/facebook.png"  style="height: 30px;">
+            <img src="images/linkedin.png"  style="height: 38px; margin-top: -4px;">
+            <img src="images/twitter.png"  style="height: 34px; margin-top: -2px;">
+        </div>
+    </div>
+</body>
+
+</html>

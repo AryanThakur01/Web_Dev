@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS events</title>
+    <style>
+        #para{
+            cursor:default;
+        }
+        #btn{
+            padding: 5px 10px;
+            color: white;
+            background-color: darkblue;
+            border: 2px solid gray;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+        <h1>Events in JavaScripts</h1>
+    <h3>
+        event is something that happens on screen like clicking 
+    </h3>
+    <p>
+        <h2>Browser events:</h2>
+        click <br>
+        context menu <br>
+        mouseover / mouseout <br>
+        mousedown / mouseup <br>
+        mousemove <br>
+
+        submit <br>
+        focus <br>
+        <br>
+        DomContentLoaded <br>
+        <br>
+        transitionend <br>
+
+        <div class="container">
+            <h1>This is my heading</h1>
+            <p id="para"  onmouseover="toggle_color()" onmouseout="toggle_color_out()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit molestias sunt cum natus tenetur iure commodi culpa sequi eum ero eos repudiandae aliquid ipsa sed, recusandae officiis, adipisci accusamus, autem voluptates facilis? Explicabo doloribus similique exercitationem in laborum incidunt asperiores, rerum saepe voluptates? Aspernatur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad vitae, consequatur voluptatem cum fugit laudantium saepe alias, ut accusamus repellat blanditiis delectus velit possimus! Perspiciatis, maiores temporibus! Omnis culpa iste aperiam tenetur consequatur, nostrum facere non voluptatem perspiciatis hic dicta aliquam quisquam deleniti minima aut praesentium, iure rem sapiente soluta. Hic quas eveniet cumque a explicabo tenetur dolorum omnis harum odit itaque rem unde officiis, tempora, ducimus illo totam? Fuga soluta sequi praesentium eaque vero voluptatibus ut excepturi voluptates ullam iste animi veritatis sapiente provident, reiciendis repellendus. A minima, odio animi tenetur, beatae aspernatur sequi culpa ratione accusantium, quos modi temporibus fugiat! Tenetur quaerat nulla cum id repellat accusantium reiciendis rerum dolores in voluptatibus ipsum ipsa dignissimos perspiciatis, reprehenderit facere, blanditiis amet eius harum illum alias optio. Illum minus incidunt error eos? Ad tenetur nemo impedit voluptas quis repudiandae odit explicabo, alias maiores natus consequuntur quos vel quidem et porro perferendis doloremque quo volunim nam? doloribus eligendi temporibus quos nemo!
+            </p> 
+        </div>
+        <button id="btn" onclick="togglehide()">toggle show</button>
+        <script>
+            function toggle_color(){
+                let para = document.getElementById('para');
+                para.style.backgroundColor = 'green'
+            }
+            function toggle_color_out(){
+                let para = document.getElementById('para');
+                para.style.backgroundColor = 'darkblue'
+            }
+
+            function togglehide() {
+                let btn = document.getElementById('btn');
+                let para = document.getElementById('para');
+                // if(para.style.display != 'none'){
+                //     para.style.display = 'none' ;
+                // }
+                // else{
+                //     para.style.display = 'block' ;
+                // }
+                if(para.style.opacity == 1){
+                    para.style.opacity = 0 ;
+                }
+                else{
+                    para.style.opacity = 1 ;
+                }
+            }
+        </script>
+    </p>
+</body>
+</html>

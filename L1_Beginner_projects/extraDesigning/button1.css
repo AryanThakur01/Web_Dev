@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(0, 0, 24);
+}
+.container{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 32vh;
+    left: 40vw;
+    background-color: black;
+    background: linear-gradient(-45deg, yellow, rgb(0, 0, 24) , orange);
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skewX(2deg) skewY(2deg);
+    box-shadow: 0px 0px 50px rgba(255, 0, 0, 0.281);
+
+}
+.container span{
+    background-color: white;
+    height: 200px ;
+    width: 200px;
+    position: absolute;
+    transform: skewX(-2deg) skewY(-2deg);
+    background-color: rgb(0, 0, 24);
+    color: white;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.container:hover{
+    animation: rotate 1s infinite;
+    /* animation-timing-function: ease-in-out; */
+}
+@keyframes rotate {
+    0%{
+        background: linear-gradient(-45deg, yellow, rgb(0, 0, 24) , orange);
+    }
+    50%{
+        background: linear-gradient(-45deg, red, rgb(0, 0, 24) , aqua);
+    }
+    100%{
+        background: linear-gradient(-45deg, yellow, rgb(0, 0, 24) , orange);
+    }
+}

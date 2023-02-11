@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFENITE</title>
+    <link rel="stylesheet" href="styleHome.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <div id="navBar">
+        <div id="logo">LOGO</div>
+        <div id="hamburger" onclick="openNavigationMenu()">
+            <div id="b1" class="hamBar bar1"></div>
+            <div id="b2" class="hamBar bar2"></div>
+            <div id="b3" class="hamBar bar3"></div>
+        </div>
+        <div id="navMenu" class="navVisible navHide">
+            <ul id="navMenuMajorList">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" onclick="activateTrainers()">Menu &#9657;</a></li>
+                <li><a href="#" onclick="activateShop()">About &#9657;</a></li>
+                <li><a href="#" onclick="activatePages()">Cart &#9657;</a></li>
+                <li><a href="#">RESERVE</a></li>
+            </ul>
+            <ul id="navMenuSubList">
+                <li class="navMenuSubList_lis" id="pages">
+                    <ul>
+                        <li><a href="#homePage" onclick="foldNavigation()">Home</a></li>
+                        <li><a href="#" onclick="foldNavigation()">About</a></li>
+                        <li><a href="#" onclick="foldNavigation()">FAQs</a></li>
+                        <li><a href="#" onclick="foldNavigation()">Contact </a></li>
+                    </ul>
+                </li>
+                <li class="navMenuSubList_lis" id="shops">
+                    <ul>
+                        <li><a href="#" onclick="foldNavigation()">Shop1</a></li>
+                        <li><a href="#" onclick="foldNavigation()">Shop2</a></li>
+                        <li><a href="#" onclick="foldNavigation()">Shop3</a></li>
+                    </ul>
+                </li>
+                <li class="navMenuSubList_lis" id="trainers">
+                    <ul>
+                        <li><a href="#" onclick="foldNavigation()">Link1</a></li>
+                        <li><a href="#" onclick="foldNavigation()">Link2</a></li>
+                        <li><a href="#" onclick="foldNavigation()">Link3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="Company">
+        <div>CAFENITE</div>
+        <div>Discover the taste of real coffee</div>
+    </div>
+    <div id="abt">
+        <h1>About</h1>
+        CAFENITE, a part of Coffee Day Global Limited, is India’s favourite hangout for coffee and conversations.
+        Popularly known as CCD, we strive to provide the best experience to our guests. Our coffees are sourced from
+        thousands of small coffee planters, who made us who we are today and we're glad to be a part of their lives. We
+        opened our first cafe in 1996 at Brigade Road in Bangalore – the youth and the young at heart immediately took
+        to the cafe, and it continues to be one of the most happening places in the city. Cafenite to the youth is a
+        “hangout” spot where they meet people, make conversations, and have a whole lot of fun over steaming cups of
+        great coffee.It's been an exciting journey since then to becoming the largest organised retail cafe chain in the
+        country.
+
+    </div>
+</body>
+
+</html>

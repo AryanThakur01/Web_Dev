@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="styleHome.css">
+</head>
+<body>
+    <!-- NAVIGATION MENU -->
+    <nav>
+        <div id="logo">
+            <img src="/images/128px-Jeweled_Sword.svg.png" alt="!">
+        </div>
+        <div id="hamburger" onclick="navMenuList()">
+            <div class="bar" id="b1"></div>
+            <div class="bar" id="b2"></div>
+            <div class="bar" id="b3"></div>
+        </div>
+        <div class="navMenu fold" id="naviMenu">
+            <ul>
+                <li><a href="home.html" class="active" onclick="navMenuList()" onmouseover="descrh()">Home</a></li>
+                <li><a href="#about" onclick="navMenuList()" onmouseover="descra()">About</a></li>
+                <li><a href="contact.html" onclick="navMenuList()" onmouseover="descrc()">Contact</a></li>
+                <li><a href="#" onclick="navMenuList()" onmouseover="descrt()">Team</a></li>
+                <li><a href="#" onclick="navMenuList()" onmouseover="descrm()">Message</a></li>
+            </ul>
+            <div id="Desc">
+                <h1>Heading</h1>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis architecto consequatur, velit similique delectus sequi fugit placeat distinctio ea quas fuga sed esse, dolorem deserunt. Perspiciatis veritatis deleniti asperiores dolorem, natus nam inventore,</div>
+            </div>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+
+
+
+
+    <!-- LANDING PAGE -->
+    <div id="home">
+        <div>
+            <h1>
+                Creating a world of business boosters
+            </h1>
+            <h2>
+                <span>Home</span>/ <span>Services</span>/ <span>Contact</span>
+            </h2>
+            <div id="button">
+                <a href="#">Get Started</a>
+            </div>
+        </div>
+        <div id="about">
+            <h2>About Us</h2>
+            <div></div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dicta sunt nesciunt dolore nam tempore cum iusto molestias quod nisi accusantium adipisci, nemo similique aliquid? Laborum vel aperiam quam consequuntur.</div>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, numquam quis?</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate?</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li></li>
+                <li><a href="about.html">Read more</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

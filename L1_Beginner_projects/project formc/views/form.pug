@@ -1,0 +1,17 @@
+html 
+    head
+        title The third form
+        style 
+            include ../static/style.css
+        script(src="/static/script.js") 
+    body 
+        div#formContainer
+            div#form
+                h1 Form Heading
+                form(action="/", method="post")
+                    input(type="text", name="name", placeholder="Enter your name")
+                    input(type="email", name="email", placeholder="Enter your email address")
+                    input(type="text", name="number", placeholder="Enter your contact number")
+                    textarea(name="address", cols="30", rows="3", placeholder='Enter your address')
+                    textarea(name="more", cols="30", rows="3", placeholder="Enter more about you")
+                    input(type="submit", value="Submit")

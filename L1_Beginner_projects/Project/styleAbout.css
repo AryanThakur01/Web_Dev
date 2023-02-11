@@ -1,0 +1,116 @@
+*{
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+.bar{
+    height: 5px;
+    width: 25px;
+}
+body{
+    background-color: black;
+}
+#aboutPage{
+    background-color: rgb(18, 27, 54);
+    color: whitesmoke;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+}
+.left{
+    background-color: rgb(16, 48, 16);
+    padding: 20px 5px 50px 5px ;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: leftflow 1s ease-out;
+}
+@keyframes leftflow {
+    from{
+        background-color: transparent;
+        margin-left: -1000px;
+    }
+    to{
+        background-color: rgb(16, 48, 16);
+        margin-left: inherit;
+    }
+    
+}
+.left ul{
+    list-style: none;
+}
+.left ul h3{
+    padding: 10px 3px;
+}
+.left ul li{
+    padding: 3px 5px;
+}
+tr td:first-child{
+    width: 120px;
+    padding: 5px 3px;
+}
+.right{
+    padding: 65px 50px;
+    font-size: 20px;
+    margin-top: 0px;
+    animation: enterrightabt 2s ease-in-out;
+    z-index: 5;
+}
+@keyframes enterrightabt {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+.right img{
+    height: 200px;
+    width: 150px;
+    float: right;
+    margin: 40px;
+}
+.right h1{
+    text-shadow: -2px -2px 5px whitesmoke;
+    color: aqua;
+    margin-bottom: 30px;
+}
+.right h1::after{
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: green;
+    position: absolute;
+    display: flex;
+    margin-top: 10px;
+    animation: underlineRollin 2s ease-out;
+    /* animation: chainflow 1s ease; */
+}
+@keyframes underlineRollin {
+    0%{
+        width: 0px;
+    }
+    33.3%{
+        width: 150px;
+    }
+    66.6%{
+        width: 20px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+p{
+    padding: 10px 0px;
+}
+
+
+@media only screen and (max-width: 789px) {
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

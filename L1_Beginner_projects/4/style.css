@@ -1,0 +1,172 @@
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    width: 100vw;
+    opacity: 0.7;
+    z-index: -1;
+}
+.navbar{
+    display: flex;
+    overflow:auto;
+    overflow-y: hidden;
+    align-items: center;
+    height: 56px;
+    width: 102%;
+    position: fixed;
+    margin: -8px -8px;
+    animation-name: navbar;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+@keyframes navbar {
+    from{
+        margin-top: -60px;
+    }
+    to{
+        margin-top: -8px;
+    }
+    
+}
+
+.navbar img{
+    height: 40px;
+    width: 70px;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a{
+    display: flex;
+    padding: 7px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.navbar ul li a:hover{
+    background-color: #ffffff26;
+    text-decoration: wavy;
+    color: aqua;
+}
+
+
+#home{
+    background: url(image/card1.svg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    width: auto;
+    margin: -8px;
+    z-index: -2;
+}
+
+
+.primary{
+    /* background-color: rgb(2, 51, 0); */
+    color: white;
+    margin: 311px auto;
+    border-radius: 15px;
+    height: 60px;
+    width: 20rem;
+    font-size: 6rem;
+    text-align: center;
+}
+
+
+
+#aboutus{
+    padding: 30px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    /* height: 286px; */
+    background-color: rgba(0, 0, 0, 0.342);
+    border-radius: 30px;
+    box-shadow: 20px -20px 15px black, inset 20px -20px 20px gray;
+}
+
+.secondary{
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px gray;
+}
+
+#sponsors::before{
+    content: "";
+    position: absolute;
+    background: url(image/b2.svg) no-repeat top center/cover;
+    top: 1200px;
+    left: 0px;
+    height: 900px ;
+    width: 98.75vw;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#sponsors div{
+    /* background-color: red; */
+}
+#sponsors div .secondary{
+    text-align: center;
+    margin-top: 450px;
+    color: black;
+    text-shadow: 0px 4px 4px black;
+}
+
+#sponsors .content .images{
+    display: flex;
+    justify-content: center;
+    margin: 30px 20px;
+    border: 2px solid white;
+}
+#sponsors img{
+    margin: 20px 90px;
+    height: 100px;
+    width: 100px;
+}
+
+#contactus::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 1900px;
+    left: 0px;
+    height: 500px;
+    width: 98.6vw;
+    z-index: -1;
+
+}
+
+#contactus{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactus h1{
+    color: blanchedalmond;
+}
+
+
+
+
+#contactus form .input input{
+    text-align: center;
+    padding: 7px;
+    border-radius: 8px;
+    margin: 10px;
+    width: 50vw;
+}
+
+#contactus form .input input[type='submit']{
+    width: 10vw;
+    margin-left: 21vw;
+}

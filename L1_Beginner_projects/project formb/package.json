@@ -1,0 +1,17 @@
+{
+  "name": "project-formb",
+  "version": "1.0.0",
+  "description": "this is the second form type created by me\t",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aryan THAKUR",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.1.2",
+    "path": "^0.12.7",
+    "pug": "^3.0.2"
+  }
+}

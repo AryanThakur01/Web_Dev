@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(0, 4, 36);
+}
+#aboutOwner{
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+#head{
+    font-size: 55px;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 2px 5px aqua;
+}
+#illustration{
+    background-color: rgba(0, 23, 128, 0.219);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+#illustration img{
+    /* position: ab solute; */
+    height: 200px;
+    width: 170px;
+    align-self: center;
+}
+#illustration table{
+    margin-top: 40px;
+}
+table{
+    color: white;
+    text-shadow: 1px 1px 2px aqua;
+}
+th{
+    float: left;
+    padding: 10px 5px;
+    font-size: 17px;
+    font-weight: 800;
+}
+td{
+    padding: 3px 4px;
+}
+#AboutMe{
+    background-color: rgba(0, 38, 255, 0.048);
+    padding: 50px;
+    color: rgb(0, 255, 221);
+    text-shadow: 1px 1px 2px white;
+}
+#AboutMe span{
+    font-size: 45px;
+    font-weight: 900;
+}
+#AboutMe p{
+    font-size: 20px;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}

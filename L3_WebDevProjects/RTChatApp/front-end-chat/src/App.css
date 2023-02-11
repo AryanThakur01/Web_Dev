@@ -1,0 +1,25 @@
+.btn {
+  background-color: rgba(255, 255, 255, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.267);
+  cursor: pointer;
+  padding: 5px 20px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.479);
+  backdrop-filter: blur(20px);
+  transition: 0.2s linear;
+}
+.btn:hover {
+  background-color: rgba(0, 128, 0, 0.274);
+  color: #4034e3;
+  text-shadow: 1px 1px 5px white;
+  letter-spacing: 1px;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.459);
+  background-color: rgba(255, 255, 255, 0.507);
+}
+
+.text-container {
+  background-color: rgba(255, 255, 255, 0.479);
+  border: 1px solid rgba(255, 255, 255, 0.342);
+  padding: 4px 5px;
+  outline: none;
+  backdrop-filter: blur(20px);
+}

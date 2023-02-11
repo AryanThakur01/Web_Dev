@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    word-spacing: 3px;
+    transition: all 0.5s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+/* STYLING NAVIGATION MENU */
+#logo img{
+    height: 40px;
+}
+nav{
+    /* position: fixed; */
+    background-color: black;
+    height: 40px;
+    width: 100%;
+}
+
+/* Hamburger navigator designing */
+#hamburger{
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(0, 6, 39);
+    border-radius: 2px;
+    cursor: pointer;
+    /* background-color: orange; */
+    z-index: 300;
+}
+/* Icon styling */
+.bar{
+    height: 5px;
+    width: 25px;
+    background-color: white;
+    border-radius: 4px;
+    margin: 3px;
+    transition: all 1s ease;
+}
+#hamburger:hover .bar{
+    animation: bardance 1s ease infinite;
+    /* margin: 8px; */
+}
+@keyframes bardance {
+    0%{
+        background-color: white;
+    }
+    33%{
+        background-color: rgb(0, 255, 0);
+    }
+    66%{
+        background-color: aqua;
+    }
+    100%{
+        background-color: white;
+    }
+    
+}
+.cross1{
+    background-color: red;
+    transform: rotateZ(-45deg);
+    height: 2px;
+    position: absolute;
+}
+.cross2{
+    opacity: 0;
+}
+.cross3{
+    position: absolute;
+    background-color: red;
+    transform: rotateZ(45deg);
+    height: 2px;
+}
+
+
+/* Styling list of contents */
+.navMenu{
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 24);
+    transition: all 1s ease-in-out;
+    animation: naviMenu;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    z-index: 20;
+}
+
+@keyframes naviMenu {
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+.navMenu ul{
+    list-style: none;
+    font-size: 25px;
+    padding-top: 0px;
+    margin: 10px;
+    border-right: 2px solid aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navMenu ul li{
+    margin: 18px 8px;
+}
+
+.navMenu ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.navMenu ul li a:hover{
+    background-color: black;
+    color: aqua;
+    border: 1px solid white;
+}
+.navMenu ul li a.active{
+    background-color: black;
+    color: aqua;
+    border: 1px solid white;
+}
+
+
+
+/* Describing the side Content */
+#Desc{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#Desc h1{
+    padding: 10px 50px;
+}
+#Desc div{
+    padding: 10px 55px;
+}
+
+
+.fold{
+    transition: all 1s ease;
+    height: 0px;
+}
+
+
+/* Making responsive */
+@media only screen and (max-width: 800px){
+    .navMenu{
+        grid-template-columns: 1fr;
+        height: 750px;
+    }
+    .navMenu ul{
+        border-right: 2px solid transparent;
+        border-bottom: 1px solid white;
+        margin-left: 50px ;
+        margin-right: 50px;
+    }
+    #Desc h1{
+        padding: 0px 10px;
+    }
+    #Desc div{
+        padding: 10px 20px;
+    }
+    .fold{
+        transition: all 1s ease;
+        height: 0px;
+    }
+    .hamburger, .navMenu{
+        position: absolute;
+        top: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LANDING PAGE */
+#home{
+    height: fit-content;
+    background-color: rgb(0, 0, 41);
+    color: white;
+}
+#home div:first-child{
+    top: 0;
+    position: sticky;
+    width: 100%;
+    padding-top: 190px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+}
+#home div h1{
+    text-align: center;
+    font-size: 45px;
+    /* background-color: gray; */
+}
+#home div h2{
+    /* background-color: gray; */
+    text-align: center;
+    font-size: 35px;
+}
+
+#button{
+    align-self: center;
+    font-size: 30px;
+    margin-top: 20px;
+    /* background-color: yellow;
+    padding: 20px; */
+}
+#button a{
+    border: 5px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(133, 133, 133);
+    color: white;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+#button a:hover{
+    padding: 0px 50px;
+    background-color: rgb(26, 26, 26);
+    border: 5px solid black;
+    box-shadow: inset 0px 0px 6px rgb(128, 128, 128);
+    color: aqua;
+    text-shadow: 0px 0px 3px white;
+    box-shadow: 0px 3px 5px black;
+}
+@media only screen and (max-width: 833px) {
+    #home div h1{
+        background-color: rgb(48, 0, 0);
+        font-size: 20px;
+        text-align: left;
+        font-size: 45px;
+    }
+    #home div h2{
+        /* background-color: gray; */
+        text-align: left;
+        font-size: 35px;
+    }
+    #button{
+        align-self:flex-start;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ABOUT PAGE */
+#about{
+    background-color: rgba(37, 0, 204, 0.315);
+    margin-top: 320px;
+    position: relative;
+    height: fit-content;
+    z-index: 3;
+    text-shadow: 3px 3px 5px gray;
+    padding: 130px 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px 4px black;
+
+}
+#about h2{
+    text-shadow: 0px 2px 3px black;
+    font-size: 30px;
+}
+#about h2::after{
+    /* display: flexbox; */
+    content: "";
+    height: 4px;
+    width: 100px;
+    display: inline-block;
+    background-color: green;
+    position: absolute;
+    top: 190px;
+    margin-left: -115px;
+}
+#about div:nth-child(2){
+    padding: 40px;
+}
+#about ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    margin: 20px 4px;
+    grid-gap: 10px 5px;
+    
+}
+#about ul li a{
+    color: white;
+    text-decoration: none;
+    float: right;
+    margin-right: 100px;
+    margin-top: 20px;
+    padding: 2px 10px;
+    background-color: rgb(31, 31, 31);
+    border: 1px solid white;
+
+    transition: all 0.3s ease;
+}
+#about ul li a:hover{
+    background-color: black;
+    border: 1px solid aqua;
+    color: aqua;
+    text-shadow: 0px 0px 3px white;
+    box-shadow: 0px 0px 3px white;
+}
+@media only screen and (max-width: 664px){
+    #about ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 20px 4px;
+    }   
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* if :root is used then the variable will become global, on the other hand if variable is made in a class then the variable will be local to that class */
+        :root{
+            --primary-color: rgb(38, 136, 46);
+            --seccondary_color: white;
+            --dark-color:black;
+            --size:5px;
+            --maxw: 600px;
+        }
+        .container{
+            display: flex;
+            margin: 5px;
+            background-color: var(--dark-color);
+            border: 3px;
+            border-radius: 2px;
+            justify-content: center;
+            max-width: var(--maxw);
+            margin: auto;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            margin: 3px;
+            background-color: var(--primary-color);
+            color: var(--seccondary_color);
+            margin: var(--size) 2.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.51s cubic-bezier(0.1, 0.1, 0.9, 0.9);
+}
+
+.container{
+    background-color: black;
+    /* height: 500px;
+    width: 500px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+}
+.cardtaker{
+    /* background-color: rgba(128, 128, 128, 0.342); */
+    width: 400px;
+    height: 400px;
+    margin: 100px;
+    transform-style: preserve-3d;
+    transform: rotateX(87deg) rotateZ(0deg);
+    animation: rotating 10s cubic-bezier(0.01, 0.01, 0.99, 0.99) infinite;
+    border-radius: 50%;
+    /* background-color: orange; */
+}
+@keyframes rotating {
+    from{
+        transform: rotateX(87deg) rotateZ(0deg);
+    }
+    to{
+        transform: rotateX(87deg) rotateZ(360deg);
+    }
+    
+}
+.card{
+    margin-top: 250px;
+    background-color: black;
+    height: fit-content;
+    width: 250px;
+    color: wheat;
+    padding: 20px;
+    position: absolute;
+    margin-left: 75px;
+    transform: rotateX(-90deg);
+    border-radius: 15px;
+    user-select: none;
+    z-index: 10;
+    box-shadow: 0px 0px 20px rgb(59, 0, 70);
+    transition: all 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+.cd1{
+    z-index: 10;
+}
+.cd2{
+    /* background-color: green; */
+    transform: rotateX(-90deg) rotateY(60deg) translateZ(110px) translateX(190px);
+}
+.cd3{
+    /* background-color: rgb(6, 0, 58); */
+    transform: rotateX(-90deg) rotateY(120deg) translateZ(330px) translateX(190px);
+}
+.cd4{
+    /* background-color: rgb(255, 238, 0); */
+    transform: rotateX(-90deg) rotateY(180deg) translateZ(440px);
+}
+.cd5{
+    /* background-color: rgb(6, 0, 58); */
+    transform: rotateX(-90deg) rotateY(-120deg) translateZ(330px) translateX(-190px);
+
+}
+.cd6{
+    /* background-color: green; */
+    transform: rotateX(-90deg) rotateY(-60deg) translateZ(110px) translateX(-190px);
+}
+.card:hover{
+    background-color: rgb(82, 82, 82);
+    color: aqua;
+    box-shadow: 0px 10px 30px 10px rgb(217, 0, 255);
+}

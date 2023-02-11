@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transform</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            height: 80vh;
+            background-color: rosybrown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: brown;
+            border: 2px solid red;
+            border-radius: 8px;
+            height: 200px;
+            width: 200px;
+            /* transform: rotate(45deg); */
+            transition: all 0.5s ease-out;
+        }
+        .box:hover{
+            /* transform: rotate(360deg); */
+            /* transform: skew(-30deg); */
+            transform: scale(1.5);
+            /* transform: translateX(23px); */
+            /* transform: translatey(23px); */
+            /* transform: translate(30px,30px); */ 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is the box</div>
+    </div>
+</body>
+</html>

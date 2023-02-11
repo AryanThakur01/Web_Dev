@@ -1,0 +1,15 @@
+extends base.pug
+
+block styles
+    style 
+        include ../static/styleHome.css
+
+block scripts
+    script(src="/static/script.js") 
+
+block contents
+    div#landingPageContainer
+        div#landingPage
+            h1#head    Heading
+            h2#subHead Sub-Heading
+            div#button #[a(href="#") Get Started]

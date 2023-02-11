@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+            <li>item5</li>
+            <li>item6</li>
+            <li>item7</li>
+        </ul>
+    </div>
+    <script>
+        // var string1 = "this is a string";
+        // console.log(string1);
+
+        // var is global variable
+        // let have a block level scope
+        // let a = "u"
+        // {
+        //     console.log(a);
+
+        // }
+        // let a =55;  this will print error
+
+        // a=55;  this won't produce an error message
+
+
+        // try to use "let" rather than "var"
+
+
+        // const b = 'this cannot be changed';
+        // console.log(b);
+        
+        // a= 'i want to change this'    const cannot be changed so it will produce error
+
+
+        // if-else ladder
+        let age = 32;
+        if(age>18){
+            console.log("you can drink water");
+        }
+
+        else if(age==2)
+        {
+            console.log("age is 2")
+        }
+
+        else{
+            console.log("you can drink cold drink")
+        }
+
+        // switch case statements
+        const cups = 43;
+        switch (cups) {
+            case 4:
+                console.log("the value of cups is 4");
+                break;
+                // if we do not add break then all the cases next to this case will be executed
+                
+            case 41:
+                console.log("the value of cups is 41");
+                break;
+                // if we do not add break then all the cases next to this case will be executed
+            case 42:
+                console.log("the value of cups is 42");
+                break;
+                // if we do not add break then all the cases next to this case will be executed
+                
+            case 43:
+                console.log("the value of cups is 43");
+                break;
+                    // if we do not add break then all the cases next to this case will be executed
+        
+            default:
+                console.log("the value of cups is none of 4, 41, 42, 43");
+                break;
+        }
+
+
+    </script>
+</body>
+</html>

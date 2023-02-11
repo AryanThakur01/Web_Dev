@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="./stylePage.css">
+</head>
+
+<body>
+    <div class="pageStylingCircle" style="top:50%; left: 10%; --i:1"></div>
+    <div class="pageStylingCircle" style="bottom: 10%; left: 35%; --i:2"></div>
+    <div class="pageStylingCircle" style="top: 50%; left: 70%; --i:3"></div>
+    <div class="pageStylingCircle" style="top:-2%; left: 2%; --i:4"></div>
+    <div class="pageStylingCircle" style="top:10px; right: 1%; --i:5"></div>
+    <section class="glass container">
+        <h1>TASK MANAGER</h1>
+        <div class="taskCreator">
+            <input type="text" name="taskValue" id="addTask">
+            <button id="taskCreator">Create Task</button>
+        </div>
+        <button id="save">Save</button>
+        <div class="upload-remark dataSaved"></div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./pageFunctionality.js"></script>
+    <script src="./dbReading.js"></script>
+</body>
+
+</html>

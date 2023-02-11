@@ -1,0 +1,18 @@
+extends base.pug
+block styles 
+    style 
+        include ../static/Contactstyle.css
+    style 
+        include ../static/Homestyle.css
+
+block scripts 
+    script(src="/static/script.js") 
+
+block contents 
+    h1 Contact Us
+    form(action="/") 
+        input(type="text", name="Name", placeholder="Enter your name")
+        input(type="email", name="E-mail", placeholder="Enter your E-maail")
+        input(type="text", name="contact_number", placeholder="Enter your contact number")
+        input(type="text", name="lorem", placeholder="lorem ipsum dolor sit")
+        input(type="submit", value="Submit")

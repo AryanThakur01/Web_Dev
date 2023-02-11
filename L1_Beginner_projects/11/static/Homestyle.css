@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,300&display=swap');
+*{
+    font-family: 'Titillium Web', sans-serif;
+    margin: auto;
+    box-sizing: border-box;
+}
+#navbar{
+    height: 300px;
+}
+#navbar div{
+    top: 0;         /* this is necessary when you use the position:sticky; */
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.849);
+    position: sticky;
+    display: flex;
+    align-items: center;
+}
+#navbar div ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    align-items: center;
+
+}
+#navbar div ul li{
+    margin: 2px 3px;
+    transition: all 0.3s ease-in-out;
+}
+#navbar div ul li a{
+    padding: 4px 20px;
+    color: white;
+    text-decoration: none;
+}
+#navbar div ul li:hover{
+    border-bottom: 3px solid lightgreen;
+}
+#navbar div ul li a:hover{
+    color: aqua;
+}
+
+
+
+
+#sectionHeader::before{
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    background: url("../static/bgHome.svg")no-repeat center center/cover;
+    z-index: -3;
+}
+#sectionHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 150px;
+}
+#sectionHeader h2{
+    font-size: 45px;
+    font-weight: 800;
+    padding: 6px;
+}
+#sectionHeader div{
+    margin-top: 20px;
+
+}
+#sectionHeader div a{
+    background-color: rgba(128, 128, 128, 0.329);
+    text-decoration: none;
+    color: darkgreen;
+    padding: 7px 20px;
+    font-size: 25px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 10px black;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+}
+#sectionHeader div a:hover{
+    padding: 7px 100px 7px 10px;
+    background-color: green;
+    box-shadow: 8px 0px 30px rgb(0, 255, 0), -8px 0px 30px rgb(0, 255, 0), 0px -8px 30px rgb(0, 255, 0), 0px 8px 30px rgb(0, 255, 0);
+    color: aqua;
+    text-shadow: 2px 2px 5px white;
+}
+
+
+#about{
+    padding: 50px 10px;
+    background-color: white;
+    margin-top: 60vh;
+    height: 800px;
+    z-index: 3;
+}
+#about h1{
+    font-weight: 900;
+    width: fit-content;
+    border-bottom: 5px solid green;
+    margin-left: 0px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+#about ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0px;
+    list-style: none;
+    grid-gap: 3px;
+}
+#about ul li{
+    margin: 0px;
+}
+
+
+#cards{
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    height: 500px;
+
+}
+.cd{
+    background-color: rgba(255, 255, 255, 0.664);
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    transform: rotateZ(-30deg);
+    box-shadow: 4px 4px 9px black;
+    transition: all 0.5s ease-in-out;
+    cursor:default;
+    padding: 10px;
+}
+.cd:hover{
+    transform: translateY(50px);
+}
+.cd h1{
+    width: 120px;
+    margin-left: 0px;
+    border-bottom: 4px solid green;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+#bg{
+    background-color: brown;
+    position: sticky;
+    height: 600px;
+    top: 0px;
+    width: 100%;
+}

@@ -1,0 +1,111 @@
+.product {
+    display: flex;
+    padding: 100px 5px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+.productCard {
+    margin-block-end: 20px;
+
+    display: flex;
+    /* align-items: center; */
+
+    padding: 10px;
+    padding-inline: 20px;
+
+    background-color: rgba(0, 0, 0, 0.089);
+    box-shadow: 0px 10px 65px rgba(0, 0, 0, 0.644);
+    border: 1px solid rgba(255, 255, 255, 0.158);
+    border-left: 1px solid rgba(255, 255, 255, 0.425);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur(10px);
+    text-decoration: none;
+    color: white;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 670px) {
+    .product {
+        flex-direction: column;
+    }
+
+    .productCard {
+        flex-direction: column;
+    }
+}
+
+.productCard:hover {
+    cursor: pointer;
+    box-shadow: inset 0px 0px 2px white;
+}
+
+.productCard img {
+    height: 150px;
+    width: 250px;
+    margin-block-end: 20px;
+}
+
+.productName {
+    text-align: start;
+    font-size: 1.8em;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin-block-end: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.productDescription {
+    color: rgba(255, 255, 255, 0.548);
+    margin-block-end: 10px;
+}
+
+.abtProduct {
+    margin-inline-start: min(20px, 10%);
+    min-width: 300px;
+}
+
+.starContainer {
+    display: flex;
+}
+
+.halfStar {
+    clip-path: polygon(50% 0%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    height: 20px;
+    width: 20px;
+    background-color: rgba(255, 217, 0, 0.541);
+}
+
+.star {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    height: 20px;
+    width: 20px;
+    background-color: rgba(255, 217, 0, 0.541);
+}
+
+.pDetail {
+    text-align: start;
+}
+
+.pageCounter {
+    display: flex;
+    justify-content:flex-start;
+    margin: auto;
+    width: min(100vw, 250px);
+    /* border: 2px solid white; */
+    overflow: scroll;
+    margin-bottom: 20px;
+    padding-block: 20px;
+}
+.pageCounter button{
+    border: 1px solid rgba(128, 128, 128, 0.74);
+    padding: 3px 8px;
+    margin-inline: 4px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.pageCounter button:hover{
+    background-color: rgba(255, 255, 255, 0.103);
+}

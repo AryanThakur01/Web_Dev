@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+/* font-family: 'Russo One', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: 'Lobster', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+/* font-family: 'Josefin Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,800&display=swap');
+/* font-family: 'Source Code Pro', monospace; */
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+/* font-family: 'Staatliches', cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+    scroll-behavior: smooth;
+}
+
+#navBar{
+    background-color: black;
+    /* position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 200; */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+}
+
+#logo{
+    color: rgb(18, 0, 32);
+    font-weight: 900;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-family: 'Russo One', sans-serif;
+    padding-left: 10px;
+    text-shadow: 2px -2px 5px aqua;
+}
+
+
+#hamburger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    /* background-color: rgb(0, 0, 255); */
+    /* width: 25px;
+    height: 30px; */
+    border-radius: 5px;
+    cursor: pointer;
+    /* background-color: green; */
+    height: 36px;
+    transition: all 1s ease;
+}
+#hamburger:hover .hamBar{
+    background: linear-gradient(90deg, rgb(0, 51, 0), rgb(30, 255, 0), white );
+}
+.hamBar{
+    /* background-color: white; */
+    background: linear-gradient(90deg, white, rgb(30, 255, 0), rgb(0, 61, 0) );
+    height: 4px;
+    width: 27px;
+    margin: 3px;
+    border-radius: 15px;
+    margin-top: 3px;
+}
+.bar1{
+    margin-top: 6px;
+}
+.bar3{
+    margin-bottom: 6px;
+}
+
+.navVisible{
+    position: absolute;
+    width: 100%;
+    top: -10px;
+    z-index: -1;
+    background-color: rgb(0, 0, 41);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
+    animation: openMenu 1s ease;
+    height: 500px;
+}
+@keyframes openMenu {
+    from{
+        height: 0px;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+    to{
+        height: 500px;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+    }
+    
+}
+.navHide{
+    height: 0px;
+    animation: navHide 1s ease-out;
+}
+/* @keyframes navHide{
+    from{
+        height: 500px;
+    }
+    to{
+        height: 0px;
+    }
+} */
+
+#navMenuMajorList{
+    font-weight: 900;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 3px solid aqua;
+    margin-top: 50px;
+}
+#navMenuMajorList li{
+    margin: 20px 5px;
+}
+#navMenuMajorList li a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 30px;
+    /* background-color: red; */
+    /* margin: 20px 5px; */
+    border-radius: 3px;
+    transition: all 0.5s ease;
+    color: white;
+}
+#navMenuMajorList li a:hover{
+    border: 1px solid white;
+    /* background-color: rgb(22, 0, 0); */
+    background-color: rgb(25, 0, 39);
+    color: aqua;
+    text-shadow: 0px 0px 5px white;
+    box-shadow: 0px 0px 5px rgb(245, 228, 255);
+}
+#navMenuMajorList li a span{
+    position: absolute;
+    color: white;
+
+}
+#navMenuMajorList li:last-child a:hover{
+    background-color: rgba(0, 255, 0, 0.432);
+    border: 1px solid rgb(0, 240, 0);
+    box-shadow: 0px 0px 5px rgb(0, 240, 0);
+}
+
+#navMenuSubList{
+    list-style: none;
+}
+.navMenuSubList_lis{
+    position: absolute;
+    top: 200px;
+    margin-left: 10%;
+    visibility: hidden;
+    opacity: 0;
+    animation: disappearing 1s ease-in-out;
+
+}
+@keyframes disappearing {
+    from{
+        margin-left: 10% ;
+        opacity: 1;
+    }
+    to{
+        margin-left: 0 ;
+        opacity: 0;
+    }
+    
+}
+.navMenuSubList_lis ul{
+    list-style: none;
+}
+.navMenuSubList_lis ul li{
+    margin: 30px 10px;
+}
+.navMenuSubList_lis ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+    color: white;
+
+}
+.navMenuSubList_lis ul li a:hover{
+    background-color: black;
+    border: 1px solid aqua;
+    color: aqua;
+    padding-left: 50px;
+
+}
+
+.trainvis{
+    visibility: visible;
+    opacity: 1;
+    animation: appearingmenulist 1s ease-in-out;
+}
+.shopvis{
+    visibility: visible;
+    opacity: 1;
+    animation: appearingmenulist 1s ease-in-out;
+}
+.pagevis{
+    visibility: visible;
+    opacity: 1;
+    animation: appearingmenulist 1s ease-in-out;
+}
+
+@keyframes appearingmenulist {
+    from{
+        margin-left: 0;
+        opacity: 0.2;
+    }
+    to{
+        margin-left: 10%;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* STYLING LANDING PAGE */
+
+#landingPage{
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+
+}
+#homePage{
+    position: sticky;
+    top: 0px;
+    background: url('/images/Background.jpg')no-repeat center center/cover;
+    height: 500px;
+    width: 100%;
+    z-index: -6;
+}
+#homePage h1, #homePage h2, #homePage h3{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.726);
+    text-shadow: 0px 0px 15px rgb(0, 17, 114);
+    color: wheat;
+    font-family: 'Source Code Pro', monospace;
+}
+#homePage h1{
+    padding-top: 150px;
+    font-size: 40px;
+}
+#homePage h2{
+    font-size: 30px;
+    padding: 10px;
+}
+#homePage h3{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 178px;
+}
+#homePage h3 a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.322);
+    padding: 10px 20px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 3px rgba(49, 49, 49, 0.753);
+    backdrop-filter: blur(2px);
+}
+#homePage h3 a:hover{
+    background-color: rgba(0, 214, 0, 0.671);
+    color: aqua;
+    box-shadow: 0px 0px 5px 3px rgba(245, 245, 245, 0.753);
+    text-shadow: 0px 0px 4px white;
+    padding: 10px 50px 10px 20px;
+}
+
+
+/* #servicesBg{
+    position: sticky;
+    top: 0;
+    background: linear-gradient(red, blue, orange, rgb(255, 255, 255));
+    background-color: rgb(73, 0, 0);
+    height: 600px;
+} */
+#services{
+    /* margin-top: -180px; */
+    position: relative;
+    z-index: 1;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(73, 0, 0);
+    padding: 200px 20px;
+
+}
+.serv{
+    height: fit-content;
+    width: 280px;
+    background-color: orange;
+    margin: 80px 50px;
+    padding: 20px;
+    transform: rotate(-20deg);
+    cursor: pointer;
+    border-radius: 5px ;
+    background-color: rgba(255, 255, 255, 0.521);
+    backdrop-filter: blur(6px);
+    /* box-shadow: ; */
+    border: 1px solid transparent;
+}
+.serv h2{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 60px;
+    color: rgba(0, 0, 0, 0.507);
+    font-family: 'Staatliches', cursive;
+
+}
+.serv:hover{
+    box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.418);
+    transform: translateY(20px) translateZ(30px);
+    box-shadow: inset 0px 0px 100px rgba(0, 255, 255, 0.24);
+}
+.serv:hover h2{
+    color: rgba(0, 255, 0, 0.452);
+}
+.serv h1{
+    padding-bottom: 10px;
+}
+.serv:hover h1::after{
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: rgba(0, 128, 0, 0.746);
+    position: absolute;
+    left: 0;
+    top: 55px;
+    animation: underlineService 1s ease;
+}
+@keyframes underlineService {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 100px;
+    }
+}
+.circle{
+    position: absolute;
+    background: linear-gradient(orange, blue);
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+.c1{
+    top: 100px ;
+    left: 30px;
+}
+.c2{
+    top: 30% ;
+    left: 50%;
+}
+.c3{
+    top: 70% ;
+    left: 0%;
+}

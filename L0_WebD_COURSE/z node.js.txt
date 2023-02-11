@@ -1,0 +1,25 @@
+WHAT IS NODE.JS?
+
+Node.js is a java script runtime built on Chrome's V8 JavaScript engine.
+Node.js is designated to build  scalable network applications.
+Node.js can be downloaded from the official from the official Node.js website:https://nodejs.org.
+Node.js is free and open source server environment.
+Node.js allows us to run JS on the server.
+Node.js run on multiple OS.
+
+
+WHY USE NODE.JS?
+
+you can use JS in the entire stack.
+Many famous companies use node.js as their backend.
+Node.js comes with a lot of useful built in modules.
+Node.js is fast.
+
+
+order in node.js terminal
+node REPL: Read Evaluate Print Loop
+
+
+_ can be used to get last variable value
+
+tab*2 will give all available global variales in REPL

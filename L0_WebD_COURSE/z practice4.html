@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice4js</title>
+    <style>
+        .ball{
+            position: absolute;
+            background: radial-gradient(circle, red, orange);
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            top: 100px;
+            left: 100px;
+        }
+        body{
+            background-color: black;
+        }
+        a{
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.527);
+            color: white;
+            text-decoration: none;
+            padding: 20px 30px;
+            top: 70px;
+            border-radius: 20px;
+            backdrop-filter: blur(5px);
+            box-shadow: 3px 4px 2px rgba(255, 255, 255, 0.288), inset 4px 4px 7px rgba(255, 255, 255, 0.473);
+            font-size: 2em;
+        }
+        a:hover{
+            background: radial-gradient(circle, rgba(255, 0, 0, 0.466), rgba(255, 68, 0, 0.473));
+            box-shadow: 3px 4px 5px rgba(250, 58, 0, 0.473);
+            color: aqua;
+            text-shadow: 1px 1px 4px white;
+        }
+        #box{
+            background-color: rgba(255, 255, 255, 0.527);
+            /* color: white; */
+            padding: 0px 30px;
+            padding-top: 50px;
+            top: 100px;
+            border-radius: 20px;
+            backdrop-filter: blur(5px);
+            box-shadow: 3px 4px 2px rgba(255, 255, 255, 0.473), inset 4px 4px 7px rgba(255, 255, 255, 0.356);
+            height: 300px;
+            width: 250px;
+            margin-top: 200px;
+            position: absolute;
+            /* color: white; */
+        }
+    </style>
+</head>
+<body>
+    <div class="ball" id="b1"></div>
+    <div id="container">
+        <a href="#" onclick="fun()" onmouseover="funb()">CLICK FOR WHITE</a>
+    </div>
+    <div id="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sit corrupti nobis accusamus reprehenderit id. Repellendus cupiditate facilis enim velit id quasi vero eveniet tempora ipsum, odit veritatis at nobis perferendis placeat perspiciatis. Consequatur officiis nemo consectetur, hic repellendus neque, laboriosam eaque et delectus minima consequuntur iure magnam quisquam deserunt?
+    </div>
+    <script>
+        function funb(){
+            let content = document.getElementById('box');
+                content.style.color = 'black';
+            
+        }
+
+        function fun(){
+            let content = document.getElementById('box');
+            let test = confirm('do you wanna see it as white')
+            if(test){
+            content.style.color = 'white' ;
+            }
+        }
+    </script>
+</body>
+</html>

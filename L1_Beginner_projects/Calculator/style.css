@@ -1,0 +1,99 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    background-color: black;
+    /* overflow: hidden; */
+}
+
+#calculator{
+    width: fit-content;
+    background-color: rgba(220, 220, 220, 0.527);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 5px rgb(127, 255, 212);
+}
+#calculator input{
+    /* height: 20px; */
+    padding: 8px 0px 8px 10px;
+    outline: none;
+    width: 20vw;
+    margin-top: -10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.349);
+    border: 0px solid black;
+    box-shadow: inset 0px 0px 5px black, inset 0px 0px 10px aqua;
+}
+tr{
+    /* background-color: rebeccapurple; */
+    display: flex;
+    width: 20vw;
+}
+td{
+    /* display: inline-block; */
+    width: 25%;
+    /* background-color: red; */
+    margin: 5px 2px;
+    text-align: center;
+    padding: 10px 10px;
+    height: 20px;
+    cursor: pointer;
+    user-select: none;
+    /* padding-top: 10px; */
+    font-size: 20px;
+    font-weight: 900;
+    background-color: rgba(0, 0, 0, 0.171);
+    border-radius: 4px;
+    backdrop-filter: blur(20px);
+    transition: all 0.2s;
+    text-shadow: 0px 0px 2px white;
+}
+td:hover{
+    box-shadow: 0px 3px 5px aqua;
+    color: aqua;
+    text-shadow: 0px 0px 2px white;
+}
+.zero{
+    width: 41.3%;
+}
+.divide{
+    width: 16%;
+}
+
+.circle{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: linear-gradient(red, orange );
+    z-index: -1;
+}
+#c1{
+    margin-top: -100px;
+    margin-left: -200px;
+    height: 250px;
+    width: 250px;
+
+}
+#c2{
+    margin-top: -80px;
+    margin-left: 300px;
+    height: 100px;
+    width: 100px;
+}
+#c3{
+    margin-top: 250px;
+    margin-left: -270px;
+    height: 100px;
+    width: 100px;
+}
+#c4{
+    margin-top: 290px;
+    margin-left: 300px;
+}

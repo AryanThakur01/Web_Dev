@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="circle" id="c1"></div>
+    <div class="circle" id="c2"></div>
+    <div class="circle" id="c3"></div>
+    <div class="circle" id="c4"></div>
+    <div id="calculator">
+        <input type="text" name="value" id="display">
+        <div>
+            <table>
+                <tr>
+                    <td onclick="input('C')">C</td>
+                    <td onclick="input(')')">)</td>
+                    <td onclick="input('(')">(</td>
+                    <td onclick="input('d')">Del.</td>
+                </tr>
+                <tr>
+                    <td onclick="input('1')">1</td>
+                    <td onclick="input('2')">2</td>
+                    <td onclick="input('3')">3</td>
+                    <td onclick="input('X')">X</td>
+                </tr>
+                <tr>
+                    <td onclick="input('4')">4</td>
+                    <td onclick="input('5')">5</td>
+                    <td onclick="input('6')">6</td>
+                    <td onclick="input('+')">+</td>
+                </tr>
+                <tr>
+                    <td onclick="input('7')">7</td>
+                    <td onclick="input('8')">8</td>
+                    <td onclick="input('9')">9</td>
+                    <td onclick="input('-')">-</td>
+                </tr>
+                <tr>
+                    <td onclick="input('0')" class='zero'>0</td>
+                    <td onclick="input('/')" class='divide'>/</td>
+                    <!-- <td></td>
+                    <td></td> -->
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

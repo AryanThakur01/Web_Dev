@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+
+
+.App{
+    min-height: 100vh;
+    background: url("./background.jpeg")no-repeat center center/cover;
+}

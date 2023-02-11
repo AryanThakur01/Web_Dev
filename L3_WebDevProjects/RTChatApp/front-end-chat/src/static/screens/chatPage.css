@@ -1,0 +1,40 @@
+.chatScreen {
+  margin-top: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.chats {
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.glass-container {
+  margin: 10px 10px;
+  min-height: 500px;
+  background: linear-gradient(
+    45deg,
+    rgba(37, 37, 37, 0.425),
+    rgba(255, 255, 255, 0.411)
+  );
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.459);
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  margin-inline: 10px;
+}
+
+.send-message {
+  width: clamp(100px, 1000px, 100vw);
+  min-width: 100px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.384);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}

@@ -1,0 +1,49 @@
+h1{
+    text-align: center;
+    margin: 20px;
+}
+#contact{
+    background-color: rgba(0, 0, 0, 0.856);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 35px;
+    padding-top: 100px;
+    height: 84.7vh;
+    margin-top: -50px;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 10px;
+}
+#contact form input{
+    box-shadow: 2px 2px 9px purple;
+    padding: 10px 10px;
+    width: 50vw;
+    margin: 8px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    outline: none;
+}
+#contact form input[type="button"]{
+    width: fit-content;
+    padding: 7px 2vw 7px 2vw;
+    align-self: center;
+    font-size: 18px;
+}
+#contact form input[type="button"]:hover{
+    background-color: purple;
+    color: aqua;
+    text-shadow: 1.5px 1.5px 5px white;
+    box-shadow: 3px 0px 9px rgb(136, 72, 255), -3px 0px 9px rgb(136, 72, 255), 0px 3px 9px rgb(136, 72, 255), 0px -3px 9px rgb(136, 72, 255);
+    cursor: pointer;
+}
+#footer{
+    position: absolute;
+    width: 100%;
+    top: 95vh;
+    margin: auto;
+}
+

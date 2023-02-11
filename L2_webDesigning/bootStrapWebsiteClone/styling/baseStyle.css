@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+:root{
+    --primary-color: rgb(87, 143, 104);
+    --secondary-color: white;
+}
+body{
+    overflow-x: hidden;
+}
+
+.header{
+    height: 80px;
+    padding: 5px;
+    background-color: var(--primary-color);
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+.header nav{
+    margin-top: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.header ul li{
+    padding: 7px;
+    color: var(--secondary-color);
+}
+.header ul li a{
+    padding: 10px;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.header ul li a:hover{
+    color: black;
+}
+
+.header img{
+    height: 25px;
+    width: 25px;
+    filter: invert(100%);
+    border-radius: 50%;
+    border: 2px solid transparent;
+    margin-bottom: -7px;
+}
+.header img:hover{
+    border: 2px solid black;
+}
+.social-media li:nth-child(4){
+    border-left: 1px solid rgba(255, 255, 255, 0.432);
+    padding: 0;
+    height: 30px;
+}
+
+.logo{
+    padding: 3px 13px;
+    background-color: var(--secondary-color);
+    color: black;
+    border-radius: 7px;
+    font-size: 30px;
+}
+.logo:hover{
+    transform-style: preserve-3d;
+    transform:  rotateZ(-15deg);
+    cursor: pointer;
+    box-shadow: 0px 0px 3px white;
+}
+
+
+
+
+@media only screen and (max-width: 1000px){
+    .header nav ul{
+        /* position: absolute; */
+    }
+    .header nav{
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+}
+
+
+
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+section:first-of-type{
+    background-image: linear-gradient( rgba(82, 180, 120, 0.342),rgba(0, 255, 0, 0.13), rgba(255, 255, 255, 0.507));
+}
+
+.new-feature{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: rgba(145, 255, 0, 0.664);
+    border-radius: 10px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.603);
+}
+.new-feature-text{
+    color: gray;
+    padding: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px){
+    .new-bootstrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .new-feature{
+        width: fit-content;
+    }
+}
+
+.new-bootstrap{
+    max-width: 900px;
+}
+.logo-mainbody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    width: 136px;
+    background-color: var(--primary-color);
+    font-size: 100px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+
+
+.button-container{
+    /* margin-top: -500px; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-width: 900px;
+    padding: 10px;
+}
+
+.button{
+    padding: 16px 50px;
+    border-radius: 10px;
+    margin: 2px 20px;
+    text-decoration: none;
+}
+.installOnLinux{
+    background-color: rgb(168, 168, 168);
+    width: fit-content;
+}
+.installOnLinux span{
+    margin-left: -10px;
+    pointer-events: none;
+    user-select: none;
+}
+.docs{
+    color: white;
+    background-color: rgb(129, 189, 129);
+}
+.docs:hover{
+    background-color: rgb(78, 138, 78);
+}
+
+
+
+.mini-links{
+    margin: 20px;
+    display: flex;
+    list-style: none;
+}
+.mini-links li{
+    margin: 5px;
+}
+.mini-links li a{
+    color: rgb(95, 88, 88);
+}
+.mini-links a:hover{
+    color: gray;
+}
+.mini-links li span{
+    font-weight: bold;
+}
+.mini-links-seperator{
+    border-radius: 50%;
+    align-self: center;
+    height: 2px;
+    padding: 2px;
+    background-color: black;
+}

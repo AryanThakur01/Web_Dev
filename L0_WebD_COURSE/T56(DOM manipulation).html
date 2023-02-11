@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>Contact Us</li>
+            <li>Services</li>
+            <li>About Us</li>
+            <li>More About Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        another container
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+        let nav = document.getElementById('nav');
+        console.log(nav)
+
+        // nav.innerHTML to get contents inside div as a string
+        // nav.innerHtml = "<li>Dynamic element</li>" replace the whole string
+
+        let containers = document.getElementsByClassName('container');
+        console.log(containers);
+
+        // containers[0] to get the element at 0 index 
+
+
+        // let sel = document.querySelector('.container');
+        // console.log("selector returns", sel)
+
+        
+        // document.querySelector(".container>ul>li:nth-child(1)").innerHTML = 'Inserted' ;  to insert something
+
+        let sel = document.querySelectorAll('#nav>li');
+        console.log("selector returns", sel)
+    </script>
+</body>
+</html>

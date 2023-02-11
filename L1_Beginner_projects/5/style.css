@@ -1,0 +1,129 @@
+body{
+    font-family: 'Lobster', cursive;
+}
+/* header section */
+.navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 50px;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.6;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    /* POSITION: STICKY; WON'T WORK IF IT IS INSIDE A FLEX */
+    
+    margin: -8px -8px;
+    align-items: center;
+}
+.navbar img{
+    height: 50px ;
+    width: 50px;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li a{
+    color: white;
+    display: inline;
+    margin: 0px 15px;
+    padding: 6px 15px;
+    border-radius: 26px;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.205);
+    color: aquamarine;
+    border-bottom: 3px solid green;
+}
+
+#home::before{
+    content: "";
+    background: url(images/drawing.svg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    border-radius: 10px;
+    opacity: 0.3;
+    box-shadow: inset -30px -30px 30px black, inset 30px 30px 30px black;
+}
+
+#home{  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    padding: 200px 3vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#home .item2 img{ 
+    margin-top: -50px;
+    height: 60vh;
+    width: 30vw;
+    border-radius: 20px;
+    box-shadow: 20px 20px 10px black;
+    
+}
+
+/* #home div{
+    background-color: white;
+} */
+
+#home .wel {
+    font-family: 'Lobster', cursive;
+}
+#home .wel .col{
+    color: #42235e;
+    font-size: 30px;
+    text-shadow: 2px 2px black;
+    
+}
+#home .button{
+    display: grid;
+    margin: 100px 0px;
+    grid-template-columns: 180px 100px;
+    grid-gap: 5px;
+}
+#home .button .book{
+    text-align: center;
+    /* background-color: red; */
+    font-size: 25px;
+}
+#home .button .book a{
+    box-shadow: 8px 8px 11px black;
+    text-decoration: none;
+    color: wheat;
+    display: inline;
+    padding: 10px;
+    background-color: #30275e;
+    border-bottom: 4px solid #160b4b;
+    border-radius: 20px;
+    text-shadow: 3px 3px 2px black;
+    font-family: 'Lobster', cursive;
+}
+
+#home .button .book:hover{
+    transition: all 0.2s ease-out;
+    transform: scale(1.1);
+}
+#home .button .book a:hover{
+    border-bottom: 4px solid green;
+    
+}
+
+#aboutus{
+    margin: -2vh 20vw;
+    border: 3px solid rgb(77, 64, 77);
+    padding: 1rem 9rem 2rem 9rem;
+    border-radius: 20px;
+    background-color: thistle;
+    box-shadow: inset -10px -10px 20px 5px rgb(77, 64, 77), inset 10px 10px 20px 5px rgb(77, 64, 77) ;
+}

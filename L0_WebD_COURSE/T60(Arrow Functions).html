@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <div class="container">This is arrow functions tutorial</div>
+    <script>
+        // function greet(){
+        //     console.log('good morning')
+        // }
+
+
+
+        // ARROW FUNCTION
+        let greet = ()=> {
+            console.log('good morning');
+        }
+        greet()
+
+
+
+        //*********
+        setTimeout(() => {
+            console.log('we are inside set timeout')
+        }, 3000);
+
+
+
+        //how to provide parameters to a function
+        let sum = (a,b)=> {
+            return a+b ;
+        }
+
+
+
+        //shortest-cut
+        let sum2 = (a,b)=> a+b ;
+
+
+        let half = a => a/2 ;   //possible for only 1 argument
+
+
+        let obj1={
+            greeting: "Good Morning",
+            names: ['Harry', "Rohan", "SkillF", "DjKhiladi"],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log(this.greeting + " kukdoo koo "+ student);
+                })
+            },      //yaha pr jo "this" h vo function k baharwale greeting ko point karega
+            speak2(){
+                this.names.forEach(function s (student){
+                    console.log(this.greeting + " kukdoo koo "+ student);
+                })  
+            }      //yaha wala "this", function k bahar jake greeting ko nhi dhoondega
+        }
+        obj1.speak();
+        obj1.speak2();
+    </script>
+</body>
+</html>

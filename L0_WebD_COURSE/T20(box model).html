@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+    <style>
+        .container{
+            border-bottom: 7px solid darkblue;
+            border-top: 7px solid darkblue;
+            border-radius: 20px;
+            background-color: rgb(121, 206, 218);
+            /* padding/margin: top right bottom left */
+            /* padding/margin-top: 5px; */
+            /* padding/margin-right: 5px; */
+            /* padding/margin-bottom: 5px; */
+            /* padding/margin-left: 5px; */
+            /* same is for margin as it is for padding */
+            padding: 30px 50px 30px 50px;
+            margin: 30px 78px 40px 82px;
+        }
+        body{
+            background-color: #aee0e2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="first">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam culpa assumenda libero adipisci magni. <strong>i am bold</strong> Doloremque fuga necessitatibus iusto doloribus, aliquid nobis quasi ab veniam harum, non qui eveniet placeat natus cupiditate dicta quidem earum deleniti inventore, culpa commodi laudantium dignissimos.
+        </p>
+    </div>
+    <div class="container">
+        <p id="first">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <em>i am italicised</em> Quibusdam culpa assumenda libero adipisci magni. Doloremque fuga necessitatibus iusto doloribus, aliquid nobis quasi ab veniam harum, non qui eveniet placeat natus cupiditate dicta quidem earum deleniti inventore, culpa commodi laudantium dignissimos.
+        </p>
+    </div>
+    <div class="container">
+        <p id="first">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam culpa assumenda libero adipisci magni. Doloremque fuga necessitatibus <strong><em>i am bold and italicised</em></strong> iusto doloribus, aliquid nobis quasi ab veniam harum, non qui eveniet placeat natus cupiditate dicta quidem earum deleniti inventore, culpa commodi laudantium dignissimos.
+        </p>
+    </div>
+</body>
+</html>

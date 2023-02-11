@@ -1,0 +1,160 @@
+*{
+    margin: auto;
+    box-sizing: border-box;
+}
+#container{
+    background-color: grey;
+    /* as long as the navbar is in golden region you can see it present */
+    height: 200px;
+}
+#contents{
+    margin-top: 100px;
+    color: white;
+    padding-left: 10px;
+}
+#navbar{
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.815);
+    position: sticky;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    z-index: 3;
+}
+#logo{
+    width: 100px;
+    margin: 0;
+}
+#navbar ul{
+    float: right;
+    margin-right: 10px;
+    display: flex;
+    list-style: none;
+}
+#navbar ul li a{
+    margin: 2px 5px;
+    text-decoration: none;
+    color:white;
+    padding: 4px 10px 6px 10px;
+}
+#navbar ul li:hover{
+    border-bottom: 4px solid green;
+}
+#navbar ul li a:hover{
+    color: aqua;
+}
+
+
+
+#sectionHead::before{
+    content: "";
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url("../static/black-car-wallpaper-14.jpg")no-repeat center center/cover;
+}
+
+#sectionHead{
+    margin-top: 300px;
+    text-align: center;
+}
+#sectionHead h1{
+    font-size: 60px;
+    padding: 10px 0px 20px 0px;
+    color: white;
+}
+#sectionHead a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.486);
+    border-radius: 6px;
+    padding: 10px 30px;
+    box-shadow: 3px 3px 5px aquamarine;
+    transition: all 0.7s ease-in-out ;
+}
+
+#sectionHead a:hover{
+    padding: 10px 100px 10px 10px;
+    background-color: blue;
+    color: aqua;
+    box-shadow: 3px 0px 15px rgb(35, 35, 255), -3px 0px 15px rgb(35, 35, 255), 0px 3px 15px rgb(35, 35, 255), 0px -3px 15px rgb(35, 35, 255);
+}
+
+#cards{
+    z-index: 3;
+    background-color: white;
+    margin-top: 300px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+.cd{
+    padding: 20px;
+    height: fit-content;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.425);
+    box-shadow: 3px 3px 2px rgba(184, 184, 184, 0.603);
+    margin: 10px;
+    margin-top: -60px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    transform: rotateZ(-10deg);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.cd:hover{
+    transform: translateY(30px);
+}
+.cd h1{
+    font-size: 35px;
+    border-bottom: 3px solid rgba(0, 128, 0, 0.459);
+    width: 150px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+}
+.cd div{
+    font-size: 18px;
+}
+
+
+
+
+
+
+#carrier{
+    height: 1800px;
+}
+#carrier #cont3{
+    top: 0px;
+    position: sticky;
+    background: url("../static/uwp1251633.jpeg")no-repeat center center/cover;
+    height: 700px;
+    margin-top: -600px;
+    z-index: -1;
+}
+#aboutUs{
+    color: white;
+    margin-top: 5px;
+}
+#aboutUs h1{
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+#customer{
+    margin-top: 390px;
+    background-color: white;
+    height: 670px;
+    padding-top: 100px;
+}
+
+
+#footer{
+    color: white;
+    margin-top: 2000px;
+}

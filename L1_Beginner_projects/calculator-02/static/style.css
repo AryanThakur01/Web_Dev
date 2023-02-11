@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("../images/bg.jpg") center center/cover;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calculatorContainer{
+    border-radius: 5px;
+    width: fit-content;
+    padding: 70px 20px 10px;
+    background-color: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.315);
+    backdrop-filter: blur(18px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.452);
+}
+
+.button{
+    padding: 10px;
+    margin: 2px;
+    width: 45px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.041);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.219);
+    color: rgba(255, 255, 255, 0.856);
+    text-shadow: 1px 1px 3px rgba(32, 32, 32, 0.466);
+    font-weight: bold;
+    font-size: 20px;
+}
+.button:hover{
+    color: rgb(0, 255, 170);
+    text-shadow: 0px 0px 10px white;
+    background-color: rgba(87, 87, 87, 0.404);
+}
+input{
+    display: block;
+    width: 190px;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.164);
+    background-color: rgba(255, 255, 255, 0.178);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.356);
+    border-right: 1px solid rgba(255, 255, 255, 0.356);
+}
+
+.calculatorContainer div:first-child{
+    margin: 20px;
+}
+
+.calculatorContainer input{
+    font-size: 20px;
+    padding: 20px 10px 5px 0;
+    text-align: right;
+}
+

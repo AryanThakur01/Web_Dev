@@ -1,0 +1,23 @@
+extends  base.pug
+
+block styles 
+    style 
+        include ../static/style.css
+
+block scripts 
+    script(src="/static/script.js") 
+
+block contents
+    div.circle#c1 
+    div.circle#c2 
+    div.circle#c3 
+    div.container
+        div#form 
+            h1  This is the form
+            form(action="/", method="post", class="formA") 
+                input(type="text", name='name', placeholder="Enter Your Name")
+                input(type="text", name="email", placeholder="Enter Your Email")
+                input(type="text", name="number", placeholder="Enter Your Contact Number")
+                textarea(name="reason", cols="30", rows="5", placeholder="Why you want to join us")
+                textarea(name="describe", cols="30", rows="5", placeholder="Enter Something about yourself")
+                input(type="submit", value="Submit")

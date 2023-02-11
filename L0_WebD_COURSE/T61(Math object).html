@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is math object tutorial</h1>
+    </div>
+
+    <script>
+        //Printing the math object
+        let m = Math ;
+        console.log(m);
+
+        //Printing the constants from Math Object
+        console.log("The value of Math.E is ", Math.E);
+        console.log("The value of Math.log2E is ", Math.log2E);
+        console.log("The value of Math.PI is ", Math.PI);
+        console.log("The value of Math.SQRT1_2 is ", Math.SQRT1_2);
+
+
+        //Printing the functions from Math Object
+        let a = 34.244 ;
+        let b = 31;
+
+        console.log("the value of a and b is ",a,b);
+        console.log("the value of a and b rounded is ", Math.round(a),Math.round(b));
+
+        console.log("the value of 3 raised to the power 100 = ",Math.pow(3,100));
+
+        console.log("the square root of 36 is ",Math.sqrt(36));
+        console.log("the square root of 36 is ",Math.sqrt(39));
+
+        //ceil and floor
+        console.log("5.8 rounded up to nearest integer is ",Math.ceil(5.8));
+        console.log("5.8 rounded down to nearest integer is ",Math.floor(5.8));
+
+        //Abs Function(modulous)
+        console.log("Absolute value of 5.734 is ", Math.abs(5.734));
+        console.log("Absolute value of -5.734 is ", Math.abs(-5.734));
+
+        //Trignometric function
+        console.log("the value of sin(PI/3) is",Math.sin(Math.PI/3))
+
+        //Min and Max functions
+        console.log("minimum value is (4,5,2,7) is ",Math.min(4,5,2,7));
+        console.log("maximum value is (4,5,2,7) is ",Math.max(4,5,2,7));
+
+
+        //GENERATING A RANDOM NUMBER
+        let r = Math.random();          //this generates a number between 0 and 1
+        console.log("the random number is ",r)
+
+        //Random number between a and b
+        a1=1
+        b1=100
+        let r1_100 = a1 + (b1-a1)*Math.random()
+        console.log("The random number between 1 and 100 is ",r1_100);
+        console.log("The random whole number between 1 and 100 is ",Math.floor(r1_100));
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+extends base.pug
+
+block styles 
+    style 
+        include ../static/styleSheets/index.css
+
+block content 
+    div.product
+        each val in products
+            button(type='button').productCard
+                img(src="/static/images/pr1.jpg" alt="!")
+                div.abtProduct
+                    div.productName.pDetail #{val.name}
+                    if(val.featured)
+                        div.featured.pDetail FEATURED
+                    else 
+                        div.featured.pDetail
+                    div.productDescription.pDetail
+                        | WTF this is the device used for the photography you dummy
+                    div.productDescription.pDetail.price
+                        | Price: $#{val.price}
+                    div.productDescription.pDetail.company
+                        | Company: $#{val.company}
+                    -var starCount = val.rating
+                    div.starContainer.pDetail.rating
+                        while starCount-->0
+                            div.star
+                        if starCount < -1
+                            div.halfStar
+    script(src="/static/script/index.js") 
+    script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
+
+    div.pageCounter
+        button(onclick='movefb(page-1)') <
+        - var n = 1;
+        - let page = productCount/nbHits
+        while n <= page + 1
+            button(onclick = `LoadPage(${n})`)
+                | #{n++}
+        button(onclick='movefb(page+1)') >

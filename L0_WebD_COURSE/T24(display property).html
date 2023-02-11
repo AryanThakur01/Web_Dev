@@ -1,0 +1,88 @@
+<!-- display properties -->
+<!-- inline: The element doesn’t start on a new line and only occupy just the width it requires. You can’t set the width or height. -->
+<!-- inline-block: It’s formatted just like the inline element, where it doesn’t start on a new line. BUT, you can set width and height values. -->
+<!-- block: The element will start on a new line and occupy the full width available. And you can set width and height values. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css display property</title>
+    <style>
+        *{
+        box-sizing: border-box;
+        }
+        header {
+            margin: auto;
+            border: 2px solid red;
+            width: 60%;
+
+        }
+
+        img {
+            background-color: darkblue;
+            margin: auto;
+            display: block;
+            width: 60%;
+            height: 60%;
+        }
+
+        h4 {
+            text-align: center;
+            margin: 20px;
+        }
+
+        p {
+            text-align: center;
+            margin: 20px;
+        }
+        
+        .box {
+            border: 4px solid red;
+            background-color: rgb(231, 146, 146);
+            display: inline-block;
+            width: 33%;
+            padding: 16px 16px;
+            /* box-sizing ke use se jo v hum dimensions set krte h uske according box khud ko complete adjust krleta h pading aur margin k saath varna ye dono hamari box k dimensions ko change kar dete h */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <p>my favourite mathematician (display of image is block)</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/2064_aryabhata-crp.jpg/800px-2064_aryabhata-crp.jpg"
+            alt="go online">
+        <h3>welcome to aryan's blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4>Heading A</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempore asperiores illo quos porro,
+            molestias et, ratione necessitatibus magni tempora soluta, fuga alias incidunt corrupti animi officiis
+            suscipit quae inventore. Ex soluta illo ipsa beatae blanditiis veritatis impedit quia dolorum asperiores?
+            Et, officia commodi.
+        </div>
+        <div class="box">
+            <h4>Heading B</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempore asperiores illo quos porro,
+            molestias et, ratione necessitatibus magni tempora soluta, fuga alias incidunt corrupti animi officiis
+            suscipit quae inventore. Ex soluta illo ipsa beatae blanditiis veritatis impedit quia dolorum asperiores?
+            Et, officia commodi.
+        </div>
+        <div class="box">
+            <h4>Heading C</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempore asperiores illo quos porro,
+            molestias et, ratione necessitatibus magni tempora soluta, fuga alias incidunt corrupti animi officiis
+            suscipit quae inventore. Ex soluta illo ipsa beatae blanditiis veritatis impedit quia dolorum asperiores?
+            Et, officia commodi.
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+* {
+    font-family: 'Lobster', cursive;
+    background-color: black;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 0.08fr 1fr 0.3fr;
+    color: white;
+    align-items: center;
+}
+
+header img {
+    animation-name: comingleft;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+@keyframes comingleft {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 70px;
+    }
+}
+
+header ul {
+    list-style: none;
+    justify-self: center;
+}
+
+header ul li {
+    display: inline-block;
+
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 20px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    animation-name: diverge;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+@keyframes diverge {
+    from {
+        padding: 0;
+    }
+
+    to {
+        padding: 0px 20px;
+    }
+}
+
+header ul li a:hover {
+    /* background-color: rgb(36, 36, 36); */
+    color: lightseagreen;
+    border-bottom: 3px solid green;
+    background-color: rgb(20, 20, 20);
+}
+
+header form input {
+    color: white;
+    padding: 2px 10px;
+    font-size: 14px;
+    width: 200px;
+    float: right;
+    animation-name: coming;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+@keyframes coming {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 200px;
+    }
+}
+

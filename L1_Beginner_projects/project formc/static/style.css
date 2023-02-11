@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#formContainer{
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100vh; */
+}
+#form{
+    background-color: rgba(0, 0, 0, 0.164);
+    padding: 10px 30px;
+    margin-top: 100px;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 0px 15px black;
+    transition: all 0.3s ease-out;
+}
+#form:hover{
+    box-shadow: 0px 0px 22px 4px blue;
+    /* background-color: rgb(0, 4, 15); */
+}
+#form h1{
+    font-size: 35px;
+    /* color: white; */
+    text-shadow: 0px 2px 8px aqua;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input, form textarea{
+    background-color: rgba(0, 0, 0, 0.281);
+    padding: 3px 5px;
+    margin-top: 18px;
+    width: 25vw;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    /* box-shadow: 0px 1px 8px cyan; */
+}
+::placeholder{
+    color: black;
+    text-shadow: 0px 0.5px 1px aqua;
+}
+form input[type="submit"]{
+    width: fit-content;
+    align-self: center;
+    padding: 4px 36px ;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+form input[type="submit"]:hover{
+    background-color: rgba(0, 7, 112, 0.664);
+    color: white;
+    text-shadow: 00px 0px 3px white;
+    box-shadow: 0px 3px 8px aqua;
+    padding: 4px 70px;
+
+
+}

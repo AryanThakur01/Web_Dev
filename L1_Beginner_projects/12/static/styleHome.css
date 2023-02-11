@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    /* background-color: orange; */
+    padding: 0;
+}
+body{
+    position: relative;
+    z-index: -100;
+}
+#navContainer{
+    top: 0;
+    position: absolute;
+    height: 240px;
+    width: 100%;
+    /* background-color: red; */
+}
+#nav{
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.829);
+    height: fit-content;
+    padding: 5px 10px;
+    position: sticky;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#logo{
+    color: white;
+    font-weight: 900;
+    font-size: 26px;
+    cursor:context-menu;
+    user-select: none;
+}
+
+#nav ul{
+    display: flex;
+    list-style: none;
+    margin-left: 20px;
+    
+}
+
+#nav ul li a{
+    margin: 2px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: wheat;
+    transition: all 0.5s ease-in-out;
+}
+#nav ul li a:hover{
+    background-color: gray;
+    color: aqua;
+    text-shadow: 0px 0px 3px  aquamarine;
+    box-shadow: 0px 3px 5px white;
+}
+#connect{
+    /* background-color: rebeccapurple; */
+    position: absolute;
+    right: 0px;
+}
+#connect span{
+    margin: 5px;
+    background-color: black;
+    border: 2px solid gray;
+    color: white;
+    padding: 1px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#connect span:hover{
+    background-color: grey;
+    color: aqua;
+    text-shadow: 0px 0px 3px white;
+    border: 2px solid rgb(97, 97, 97);
+    box-shadow: 0px 0px 1px wheat;
+}
+
+
+
+
+/* LANDING PAGE */
+#landingPageContainer{
+    height: 1000px;
+    width: 100%;
+    background-color: rgba(255, 166, 0, 0.527);
+    position: absolute;
+    z-index: -1;
+}
+#landingpage{
+    background-color: gray;
+    height: 500px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    padding-top: 240px;
+}
+#head{
+    /* background-color: red; */
+    /* margin-top: 260px; */
+    text-align: center;
+    font-size: 45px;
+
+}
+#subHead{
+    text-align: center;
+    font-size: 30px;
+}
+#button{
+    text-align: center;
+    font-size: 25px;
+}
+
+#footer{
+    background-color: black;
+    position: absolute;
+    z-index: 10;
+    top: 1000px;
+    width: 100%;
+    color: white;
+}
