@@ -45,6 +45,7 @@ const authUser = asyncHandler(async (req, res) => {
       email: user.email,
       pic: user.pic,
       token: generateToken(user._id),
+      _id: user._id,
     });
   } else {
     res.status(401);
@@ -67,4 +68,8 @@ const allUsers = asyncHandler(async (req, res) => {
   res.send(users);
 });
 
-module.exports = { registerUser, authUser, allUsers };
+const removeUser = asyncHandler(async (req, res) => {
+  // to add the remove user functionality
+});
+
+module.exports = { registerUser, authUser, allUsers, removeUser };

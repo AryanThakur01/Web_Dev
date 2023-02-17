@@ -73,18 +73,20 @@ const fetchChats = asyncHandler(async (req, res) => {
 
 const createGroupChat = asyncHandler(async (req, res) => {
   try {
-    if (!req.body.user || !req.body.name)
+    if (!req.body.user || !req.body.name) {
       res
         .status(HttpStatusCode.BadRequest)
         .send({ message: "Please fill all the fields" });
-
+      return;
+    }
     let users = JSON.parse(req.body.user);
     users.push(req.user);
-    if (users.length < 2)
+    if (users.length < 2) {
       res
         .status(HttpStatusCode.BadRequest)
         .send({ message: "Please select atleast 2 users to make the goup" });
-
+      return;
+    }
     const groupChat = await Chat.create({
       chatName: req.body.name,
       users: users,
